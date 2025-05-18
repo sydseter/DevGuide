@@ -69,10 +69,34 @@ jobs:
         with:
           config_path: .spellcheck-es.yaml
 
+  spell_checker_pt-br:
+    name: Check PT-BR spelling
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout markdown
+        uses: actions/checkout@v4.2.0
+
+      # rojopolis/spellcheck-github-actions does not support PT-BR,
+      # only PT, and PT-BR is too different to pass a PT spellcheck
+      - name: Set up Python
+        uses: actions/setup-python@v5.6.0
+        with:
+          python-version: '3.10'
+
+      - name: Install pyspelling
+        run: |
+          python -m pip install --upgrade pip setuptools
+          python -m pip install pyspelling
+          sudo apt-get install aspell aspell-pt
+
+      - name: Spell check PT-BR release
+        run: |
+          python -m pyspelling --config .spellcheck-pt-br.yaml
+
   build_check:
     name: Build check
     runs-on: ubuntu-24.04
-    needs: [md_linter, spell_checker_en, spell_checker_es]
+    needs: [md_linter, spell_checker_en, spell_checker_es, spell_checker_pt-br]
     steps:
       - name: Checkout markdown
         uses: actions/checkout@v4.2.0
@@ -102,7 +126,7 @@ jobs:
   export_pdf:
     name: Export PDFs
     runs-on: ubuntu-24.04
-    needs: [link_checker, md_linter, spell_checker_en, spell_checker_es]
+    needs: [build_check]
     steps:
       - name: Checkout markdown
         uses: actions/checkout@v4.2.0
@@ -125,3 +149,6 @@ jobs:
 
       - name: Build pdf for ES
         run: mkdocs build --config-file mkdocs-pdf-es.yaml
+
+      - name: Build pdf for PT-BR
+        run: mkdocs build --config-file mkdocs-pdf-pt-br.yaml

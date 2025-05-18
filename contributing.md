@@ -111,23 +111,41 @@ Test the web document locally before creating / updating a pull request.
 
 #### Windows
 
-On Windows install python and then install packages using pip:
+On Windows install python and then install packages using pip :
 
-* `python3 -m pip install mkdocs-open-in-new-tab`
-* `python3 -m pip install mkdocs-material`
-* `python3 -m pip install mkdocs`
+```text
+python3 -m pip install mkdocs-open-in-new-tab
+python3 -m pip install mkdocs-material
+python3 -m pip install mkdocs
+python3 -m pip install mkdocs-with-pdf
+```
+
+Copy these files into `docs\` for the contributing pages :
+
+* `code_of_conduct.md`
+* `contributing.md`
+* `license.txt`
 
 Run the docs server and observe the document at `http://127.0.0.1:8000/` :
 
 * `python3 -m mkdocs serve`
 
-To generate site content for deployment build the web document with:
+To generate site content for deployment build the web document with :
 
-* `python3 -m mkdocs build`
+* `python3 -m mkdocs build --config-file mkdocs-pdf-en.yaml`
+
+To create the PDF export in folder `site` :
+
+* `python3 -m mkdocs build --config-file mkdocs-pdf-en.yaml`
+
+and for PDFs in other languages :
+
+* `python3 -m mkdocs build --config-file mkdocs-pdf-es.yaml`
+* `python3 -m mkdocs build --config-file mkdocs-pdf-pt-br.yaml`
 
 #### Linux / MacOS
 
-On Linux or MacOS install the packages using python's pip:
+On Linux or MacOS install the packages using python's pip :
 
 ```text
 pip install mkdocs
@@ -136,29 +154,45 @@ pip install mkdocs-open-in-new-tab
 pip install mkdocs-with-pdf
 ```
 
+Add some symbolic links for the contributing pages :
+
+```text
+ln -s ../code_of_conduct.md docs/code_of_conduct.md
+ln -s ../contributing.md docs/contributing.md
+ln -s ../license.txt docs/license.txt
+```
+
 Run the docs server and observe the document at `http://127.0.0.1:8000/` :
 
 * `mkdocs serve`
 
 Any changes to the markdown files are detected by the server and the site will rebuild.
 
-To generate site content build the web document with:
+To generate site content build the web document with :
 
 * `mkdocs build`
 
-T0 create the PDF export at `site/OWASP_Developer_Guide.pdf`:
+To create the PDF export file `site/OWASP_Developer_Guide.pdf` :
 
 * `mkdocs build --config-file mkdocs-pdf-en.yaml`
+
+and for PDFs in other languages :
+
+* `mkdocs build --config-file mkdocs-pdf-es.yaml`
+* `mkdocs build --config-file mkdocs-pdf-pt-br.yaml`
 
 ### Running checks locally
 
 The pipeline will apply checks to all pull-requests, and will fail on any error.
-To run these checks locally before pushing a commit, run these commands from the top directory:
+To run these checks locally before pushing a commit, use these commands from the top directory:
 
 1. Link checker: `lychee --max-retries 1 './**/*.md' '*.md'`
 2. Markdown linter: `markdownlint-cli2  **/*.md`
-3. Spell checker: `pyspelling --config .spellcheck-en.yaml` (for English language version)
-4. Site consistency: `mkdocs build`
+3. Spell checker: `pyspelling --config .spellcheck-en.yaml` for English language version
+4. Spell check other versions:
+    1. Spanish: `pyspelling --config .spellcheck-en.yaml`
+    2. Brazilian Portuguese: `pyspelling --config .spellcheck-pt-br.yaml`
+5. Site consistency: `mkdocs build`
 
 Follow instructions to install the command line [lychee][lychee-install] and [pandoc][pandoc-install].
 

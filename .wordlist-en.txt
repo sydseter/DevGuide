@@ -193,6 +193,7 @@ OpenCRE
 OpenID
 OpenJDK
 PCI
+PDFs
 PID
 PIDs
 PKI

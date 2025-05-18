@@ -264,7 +264,13 @@ nav:
       - Gestión de vulnerabilidades:
         - Descripción: es/06-verification/04-vulnerability-management/index.md
         - DefectDojo: es/06-verification/04-vulnerability-management/01-defectdojo.md
+  - 'Guia de Desenvolvimento':
+    - Introdução: pt-br/index.md
+    - Fundamentos:
+      - Introdução: pt-br/02-foundations/index.md
+      - Fundamentos de segurança: pt-br/02-foundations/01-security-fundamentals.md
+      - OWASP Top Dez: pt-br/02-foundations/05-top-ten.md
   - 'Get involved':
-    - Provide content: contributing.md
+    - Providing content: contributing.md
     - Code of Conduct: code_of_conduct.md
     - License: license.txt
