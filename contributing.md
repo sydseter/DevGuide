@@ -1,5 +1,3 @@
-<a href="https://devguide.owasp.org/"><img src="docs/assets/images/dg_alt.png" alt="DevGuide logo" height="180px"/></a>
-
 ## Contributing
 
 The Developer Guide has been updated for the modern security landscape,
@@ -8,7 +6,7 @@ and then suggesting where more in-depth information can be found.
 
 The project has a team of leaders that oversee the project
 and contributions from members of the security community are positively encouraged.
-Refer to the The [OWASP project page][project] for the latest information and releases.
+Refer to the The [OWASP project page][project] for the latest information.
 
 All contributions and suggestions are certainly welcome, and we ask that
 you follow the [contributing Code of Conduct][conduct].
@@ -19,10 +17,10 @@ Feel free to discuss topics in the [project wiki][wiki] and create new discussio
 ### Ground rules
 
 * follow our [Code of Conduct](code_of_conduct.md)
-* ensure that all contributions meet the [license](license.txt)
+* ensure that all contributions are within the [license](license.txt)
 * the use of generative AI is not prohibited but must be declared in the pull request
 
-### Philosophy
+#### Philosophy
 
 The Developer Guide does not seek to duplicate the information contained in the many OWASP documentation projects;
 these projects address their subject fully and completely.
@@ -33,7 +31,7 @@ and then refer the developer to further reading for more in-depth treatment of t
 As a rule of thumb, if a section is more than two pages then it is probably too long;
 split the section up or refer to another more detailed project.
 
-### Etiquette
+#### Etiquette
 
 Github issues are used to coordinate contributions and keep track of progress towards each milestone:
 
@@ -49,7 +47,7 @@ The Developer Guide will have many contributors, and it is an aim to keep the st
 Follow the style used in OWASP flagship projects [ASVS][asvs] and [WSTG][wstg],
 which is speaking from first person plural and semi-formal in tone.
 
-### Technical level
+#### Technical level
 
 Generally the guide is aimed at the introductory to medium technical levels,
 and should rarely deal with any subject at an advanced level.
@@ -60,7 +58,7 @@ with more detail contained in the sub-sections at a medium technical level.
 Note this guide should not replicate the many detailed sources on specific security topics;
 instead provide links to these specialist security knowledge bases.
 
-### Page structure
+#### Page structure
 
 Each sub-section should deal with one specific subject, for example 'Threat modeling',
 or a single project such as the OWASP 'Threat Dragon' Builder/Tool project.
@@ -81,6 +79,19 @@ Sub-sections that describe an individual project should follow the same structur
 Note that the page describing a project should not be the same as the project documentation on the OWASP site,
 the Developer Guide should strive to be a ' TL;DR ' for the project running to one or maybe two pages.
 
+### Translations
+
+The OWASP Developer Guide aims to be accessible,
+and translations help to make is a useful resource for the global AppSec community.
+
+There are translations in progress:
+
+* [Spanish][es] lead translator Roxana Calderon
+* [Brazilian Portuguese][pt-br] lead translator Amauri Bizerra
+* [Japanese][ja] lead translator Yuuki Ebihara
+
+If you can help with these translations then please contact the lead translator or the DevGuide project leaders.
+
 ### Media kit
 
 The OWASP projects have [media kits][media] that contain biographies of the project leaders and other project media.
@@ -92,21 +103,7 @@ The pull requests have checks applied to them:
 
 1. Link checker for any broken links; if there is an imperative for a broken link then add it to `.lycheeignore`
 2. Markdown lint that ensures the markdown is consistent and valid
-3. Spell checker; new words that are not recognized should be added to `/.wordlist.txt`
-
-### Running checks locally
-
-The pipeline will apply checks to all pull-requests, and will fail on any error.
-To run these checks locally before pushing a commit, run these commands from the top directory:
-
-1. Link checker: `lychee --max-retries 1 './**/*.md' '*.md'`
-2. Markdown linter: `markdownlint-cli2  **/*.md`
-3. Spell checker: `pyspelling --config .spellcheck-en.yaml` (for English language version)
-
-Follow instructions to install the command line [lychee][lychee-install] and [pandoc][pandoc-install].
-
-To install `markdownlint-cli2` use npm: `npm install markdownlint-cli2 --global`,
-and to install `pyspelling` use pip: `pip install pyspelling`
+3. Spell checker; new words that are not recognized should be added to `.wordlist.txt`
 
 ### Running web document locally
 
@@ -149,7 +146,24 @@ To generate site content build the web document with:
 
 * `mkdocs build`
 
-This will also create the PDF export at `site/OWASP_Developer_Guide.pdf`.
+T0 create the PDF export at `site/OWASP_Developer_Guide.pdf`:
+
+* `mkdocs build --config-file mkdocs-pdf-en.yaml`
+
+### Running checks locally
+
+The pipeline will apply checks to all pull-requests, and will fail on any error.
+To run these checks locally before pushing a commit, run these commands from the top directory:
+
+1. Link checker: `lychee --max-retries 1 './**/*.md' '*.md'`
+2. Markdown linter: `markdownlint-cli2  **/*.md`
+3. Spell checker: `pyspelling --config .spellcheck-en.yaml` (for English language version)
+4. Site consistency: `mkdocs build`
+
+Follow instructions to install the command line [lychee][lychee-install] and [pandoc][pandoc-install].
+
+To install `markdownlint-cli2` use npm: `npm install markdownlint-cli2 --global`,
+and to install `pyspelling` use pip: `pip install pyspelling`
 
 ----
 
@@ -157,11 +171,14 @@ OWASP DevGuide: _accessible security for developers_
 
 [asvs]: https://owasp.org/www-project-application-security-verification-standard/
 [conduct]: code_of_conduct.md
+[es]: https://github.com/OWASP/DevGuide/tree/main/docs/es
+[ja]: https://github.com/OWASP/DevGuide/tree/main/docs/ja
 [issues]: https://github.com/OWASP/DevGuide/issues/new/choose
 [lychee-install]: https://lychee.cli.rs/
 [media]: https://drive.google.com/drive/folders/1Ft8Ll0cgw0TIoub6aXTIJDmy0sk1RarU
 [pandoc-install]: https://pandoc.org/installing.html
 [project]: https://owasp.org/www-project-developer-guide/
+[pt-br]: https://github.com/OWASP/DevGuide/tree/main/docs/pt-br
 [request]: https://github.com/OWASP/DevGuide/pulls
 [wiki]: https://github.com/OWASP/DevGuide/wiki
 [wstg]: https://owasp.org/www-project-web-security-testing-guide/
