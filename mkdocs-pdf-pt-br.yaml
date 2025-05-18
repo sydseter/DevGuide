@@ -1,5 +1,5 @@
 site_name: Guia de Desenvolvimento do OWASP
-site_description: O Open Worldwide Application Security Project (OWASP) é uma fundação sem fins lucrativos que trabalha para melhorar a segurança de software
+site_description: Um Guia para a Construção de Aplicações e Serviços Web Seguros
 site_author: Guia de Desenvolvimento do OWASP
 site_url: https://devguide.owasp.org/
 
@@ -29,7 +29,7 @@ plugins:
         - 'en/02-foundations/05-top-ten.md'
         - 'es/'
       cover_title: Guia de Desenvolvimento do OWASP
-      cover_subtitle: Uma fundação sem fins lucrativos que trabalha para melhorar a segurança de software
+      cover_subtitle: Um Guia para a Construção de Aplicações e Serviços Web Seguros
       cover_logo: assets/images/dg_logo.png
       author: Open Worldwide Application Security Project (OWASP)
       copyright: Creative Commons Attribution ShareAlike 4.0 International (CC BY-SA 4.0)

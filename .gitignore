@@ -42,3 +42,8 @@
 !docs/pt-br/**/
 !docs/pt-br/**/*.md
 !docs/CNAME
+
+# ignore symbolic links
+docs/license.txt
+docs/code_of_conduct.md
+docs/contributing.md
