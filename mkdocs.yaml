@@ -264,3 +264,7 @@ nav:
       - Gestión de vulnerabilidades:
         - Descripción: es/06-verification/04-vulnerability-management/index.md
         - DefectDojo: es/06-verification/04-vulnerability-management/01-defectdojo.md
+  - 'Get involved':
+    - Provide content: contributing.md
+    - Code of Conduct: code_of_conduct.md
+    - License: license.txt

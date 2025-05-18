@@ -44,7 +44,7 @@ jobs:
         uses: actions/checkout@v4.2.0
 
       - name: Lint markdown
-        uses: DavidAnson/markdownlint-cli2-action@v19.1.0
+        uses: DavidAnson/markdownlint-cli2-action@v20.0.0
         with:
           config: '.markdownlint.yaml'
           globs: |
@@ -52,8 +52,8 @@ jobs:
             docs/*.md
             *.md
 
-  spell_checker_en:
-    name: Check EN spelling
+  spell_checker:
+    name: Check spelling
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout markdown
@@ -64,13 +64,6 @@ jobs:
         with:
           config_path: .spellcheck-en.yaml
 
-  spell_checker_es:
-    name: Check ES spelling
-    runs-on: ubuntu-24.04
-    steps:
-      - name: Checkout markdown
-        uses: actions/checkout@v4.2.0
-
       - name: Spell check ES language
         uses: rojopolis/spellcheck-github-actions@0.48.0
         with:
@@ -79,7 +72,7 @@ jobs:
   deploy:
     name: Deploy web doc
     runs-on: ubuntu-latest
-    needs: [md_linter, spell_checker_en, spell_checker_es]
+    needs: [md_linter, spell_checker]
     steps:
       - name: Checkout markdown
         uses: actions/checkout@v4.2.0
@@ -97,22 +90,22 @@ jobs:
           pip install mkdocs-open-in-new-tab
           pip install mkdocs-with-pdf
 
+      - name: Copy contributing tab files
+        run: |
+          cp code_of_conduct.md docs/.
+          cp contributing.md docs/.
+          cp license.txt docs/.
+
       - name: Build check
         run: mkdocs build
 
       - name: Deploy
         run: mkdocs gh-deploy --force --verbose
 
-      - name: Upload PDF
-        uses: actions/upload-artifact@v4.6.0
-        with:
-          name: pdf-export-en
-          path: site/OWASP_Developer_Guide.pdf
-
   export_pdf:
     name: Export PDFs
     runs-on: ubuntu-latest
-    needs: [md_linter, spell_checker_en, spell_checker_es]
+    needs: [md_linter, spell_checker]
     steps:
       - name: Checkout markdown
         uses: actions/checkout@v4.2.0
