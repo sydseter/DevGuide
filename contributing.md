@@ -111,7 +111,7 @@ Test the web document locally before creating / updating a pull request.
 
 #### Windows
 
-On Windows install python and then install packages using pip:
+On Windows install python and then install packages using pip :
 
 * `python3 -m pip install mkdocs-open-in-new-tab`
 * `python3 -m pip install mkdocs-material`
@@ -121,13 +121,22 @@ Run the docs server and observe the document at `http://127.0.0.1:8000/` :
 
 * `python3 -m mkdocs serve`
 
-To generate site content for deployment build the web document with:
+To generate site content for deployment build the web document with :
 
-* `python3 -m mkdocs build`
+* `python3 -m mkdocs build --config-file mkdocs-pdf-en.yaml`
+
+To create the PDF export in folder `site` :
+
+* `python3 -m mkdocs build --config-file mkdocs-pdf-en.yaml`
+
+and for PDFs in other languages :
+
+* `python3 -m mkdocs build --config-file mkdocs-pdf-es.yaml`
+* `python3 -m mkdocs build --config-file mkdocs-pdf-pt-br.yaml`
 
 #### Linux / MacOS
 
-On Linux or MacOS install the packages using python's pip:
+On Linux or MacOS install the packages using python's pip :
 
 ```text
 pip install mkdocs
@@ -142,13 +151,18 @@ Run the docs server and observe the document at `http://127.0.0.1:8000/` :
 
 Any changes to the markdown files are detected by the server and the site will rebuild.
 
-To generate site content build the web document with:
+To generate site content build the web document with :
 
 * `mkdocs build`
 
-T0 create the PDF export at `site/OWASP_Developer_Guide.pdf`:
+To create the PDF export file `site/OWASP_Developer_Guide.pdf` :
 
 * `mkdocs build --config-file mkdocs-pdf-en.yaml`
+
+and for PDFs in other languages :
+
+* `mkdocs build --config-file mkdocs-pdf-es.yaml`
+* `mkdocs build --config-file mkdocs-pdf-pt-br.yaml`
 
 ### Running checks locally
 
