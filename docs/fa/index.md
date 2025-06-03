@@ -1,4 +1,4 @@
-![Developer guide logo](assets/images/dg_logo.png "OWASP Developer Guide"){ align=right width="180" }
+![Developer guide logo](../assets/images/dg_logo.png "OWASP Developer Guide"){ align=right width="180" }
 
 Welcome to the OWASP Development Guide.
 
@@ -53,7 +53,7 @@ _Or_ you can regard this guide as a companion document to the OWASP [Integration
 the Application Security Wayfinder maps out the many tools,
 projects and documents within OWASP and the Developer Guide provides some 'wordy' context for this.
 
-[![AppSec Wayfinder](assets/images/owasp-wayfinder.png "OWASP Application Security Wayfinder")][intstand]
+[![AppSec Wayfinder](../assets/images/owasp-wayfinder.png "OWASP Application Security Wayfinder")][intstand]
 
 ----
 
