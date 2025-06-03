@@ -29,6 +29,7 @@ plugins:
         - 'en/04-design/'
         - 'en/05-implementation/'
         - 'en/06-verification/'
+        - 'fa/'
         - 'pt-br/'
       cover_title: La Guía del Desarrollador OWASP
       cover_subtitle: Un Proyecto abierto de seguridad de aplicaciones a nivel mundial
