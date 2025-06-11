@@ -47,7 +47,7 @@
 3.  برای تأیید هویت یک یا هر دو طرف در تبادل پیام‌ها, به عنوان مثال تأیید هویت در امنیت لایه انتقال (TLS).
 
 OpenID Connect به طور گسترده به عنوان یک لایه هویتی بر روی پروتکل OAuth 2.0 استفاده می‌شود. به
-[برگه تقلب پروتکل OAuth 2.0](https://cheatsheetseries.owasp.org/cheatsheets/OAuth_2.0_Cheat_Sheet.html) مراجعه کنید.
+[برگه تقلب پروتکل OAuth 2.0](https://cheatsheetseries.owasp.org/cheatsheets/OAuth2_Cheat_Sheet) مراجعه کنید.
 
 #### یکپارچگی (Integrity)
 
