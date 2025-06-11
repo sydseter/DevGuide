@@ -161,7 +161,16 @@ jobs:
           name: pdf-export-es
           path: site/OWASP_Developer_Guide-ES.pdf
 
-      - name: Build pdf for PT-BR
+      - name: Create FA PDF
+        run: mkdocs build --config-file mkdocs-pdf-fa.yaml
+
+      - name: Upload FA PDF
+        uses: actions/upload-artifact@v4.6.2
+        with:
+          name: pdf-export-fa
+          path: site/OWASP_Developer_Guide-FA.pdf
+
+      - name: Create PT-BR PDF
         run: mkdocs build --config-file mkdocs-pdf-pt-br.yaml
 
       - name: Upload PT-BR PDF

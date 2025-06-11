@@ -1,4 +1,4 @@
-[![Top 10 logo](../../assets/images/logos/top10.png "OWASP Top 10")](https://owasp.org/www-project-top-ten/){ align=right width=180 }
+![Top 10 logo](../../assets/images/logos/top10.png "OWASP Top 10"){ align=right width=180 }
 
 OWASP Top Ten یک فهرست بسیار شناخته‌شده از خطرات امنیتی اپلیکیشن‌های وب است و توسط مدل تضمین تکامل
 نرم‌افزار OWASP ([SAMM][samm]) در بخش آموزش و راهنمایی (Education & Guidance) در زیرمجموعه عملکرد
@@ -205,8 +205,9 @@ URL ارائه‌شده توسط کاربر باشد، رخ دهند. این ا�
 
 ---
 
-راهنمای توسعه‌دهندگان OWASP یک تلاش جمعی است؛ اگر چیزی را مشاهده کردید که نیاز به تغییر دارد، لطفاً
-[یک issue ثبت کنید](https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2002-foundations/05-top-ten)
-یا [در GitHub ویرایش کنید](https://github.com/OWASP/DevGuide/blob/main/docs/en/02-foundations/05-top-ten.md).
+راهنمای توسعه‌دهنده OWASP یک تلاش اجتماعی است؛ اگر چیزی نیاز به تغییر دارد، لطفاً
+[یک ایشو ثبت کنید][issue0405] یا [در گیت‌هاب ویرایش کنید][edit0405].
 
 [samm]: https://owaspsamm.org/about/
+[issue0405]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2002-foundations/05-top-ten
+[edit0405]: https://github.com/OWASP/DevGuide/blob/main/docs/en/02-foundations/05-top-ten.md

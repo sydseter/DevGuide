@@ -16,11 +16,14 @@
 
 بدون این‌ها، تلاش‌ها برای بهبود وضعیت امنیتی احتمالاً با شکست مواجه خواهند شد - برای درک اهمیت همکاری
 تیم‌های مدیریت، امنیت و توسعه، به پروژه
-[فرهنگ امنیت (Security Culture)](https://owasp.org/www-project-security-culture/stable/3-Goal_Setting_and_Security_Team_Collaboration/)
+[فرهنگ امنیت (Security Culture)][culturegoal]
 مراجعه کنید.
 
 ---
 
-راهنمای توسعه‌دهندگان OWASP یک تلاش جمعی است؛ اگر چیزی را مشاهده کردید که نیاز به تغییر دارد، لطفاً
-[یک issue ثبت کنید](https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2002-foundations/index)
-یا [در GitHub ویرایش کنید](https://github.com/OWASP/DevGuide/blob/main/docs/en/02-foundations/index.md).
+راهنمای توسعه‌دهنده OWASP یک تلاش اجتماعی است؛ اگر چیزی نیاز به تغییر دارد، لطفاً
+[یک ایشو ثبت کنید][issue0400] یا [در گیت‌هاب ویرایش کنید][edit0400].
+
+[culturegoal]: https://owasp.org/www-project-security-culture/stable/3-Goal_Setting_and_Security_Team_Collaboration/
+[edit0400]: https://github.com/OWASP/DevGuide/blob/main/docs/en/02-foundations/index.md
+[issue0400]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2002-foundations/index

@@ -99,18 +99,20 @@ NIST یک [آسیب‌پذیری][nistvuln] را اینگونه تعریف می�
 
 آسیب‌پذیری‌های امنیتی شناخته‌شده عبارتند از:
 
-- [دزدیدن کلیک (Clickjacking)](https://cheatsheetseries.owasp.org/cheatsheets/Clickjacking_Defense_Cheat_Sheet.html)
-- [حمله با اعتبارنامه‌های سرقت‌شده (Credential Stuffing)](https://cheatsheetseries.owasp.org/cheatsheets/Credential_Stuffing_Prevention_Cheat_Sheet.html)
+- [دزدیدن کلیک (Clickjacking)][csclick]
+- [حمله با اعتبارنامه‌های سرقت‌شده (Credential Stuffing)][cscreds]
 - [نشت اطلاعات بین سایتی (Cross-site leaks)][csxsleaks]
-- [حملات نفی سرویس (Denial of Service)](https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet.html) (DoS)
-- حملات [XSS مبتنی بر DOM](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html) شامل [DOM Clobbering](https://cheatsheetseries.owasp.org/cheatsheets/DOM_Clobbering_Prevention_Cheat_Sheet.html)
-- [IDOR](https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html)
-- [تزریق (Injection)](https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet.html) شامل [تزریق دستور سیستم‌عامل](https://cheatsheetseries.owasp.org/cheatsheets/OS_Command_Injection_Defense_Cheat_Sheet.html) و [XXE][csxxe]
-- [حملات تزریق مخصوص LDAP](https://cheatsheetseries.owasp.org/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.html)
-- [آلودگی پروتوتایپ در جاوا اسکریپت (Prototype pollution)](https://cheatsheetseries.owasp.org/cheatsheets/Prototype_Pollution_Prevention_Cheat_Sheet.html)
+- [حملات نفی سرویس (Denial of Service DoS)][csdos]
+- حملات [XSS مبتنی بر DOM][csdom] شامل
+    [DOM Clobbering][csdomclub]
+- [IDOR][csidor]
+- [تزریق (Injection)][csinjection]
+    شامل [تزریق دستور سیستم‌عامل]][csosinjection] و [XXE][csxxe]
+- [حملات تزریق مخصوص LDAP][csldap]
+- [آلودگی پروتوتایپ در جاوا اسکریپت (Prototype pollution)][csproto]
 - حملات [SSRF][csssrf]
-- [تزریق SQL](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html) و استفاده از [کوئری](https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html) های پارامتری
-- [تغییر ریدایرکت و فورواردهای اعتبارسنجی‌نشده](https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html)
+- [تزریق SQL][cssql] و استفاده از [کوئری][csquery] های پارامتری
+- [تغییر ریدایرکت و فورواردهای اعتبارسنجی‌نشده][csredirect]
 - حملات [XSS][csxss] و [دور زدن فیلتر XSS][csxssevade]
 
 #### HTTP و HTML
@@ -120,21 +122,23 @@ NIST یک [آسیب‌پذیری][nistvuln] را اینگونه تعریف می�
 کنترل‌های امنیتی مختلف آن‌ها داشته باشند.
 
 اکثر تیم‌های توسعه اپلیکیشن با ارتباطات HTTP و استاندارد HTML آشنا هستند، اما در صورت لزوم به
-آموزش‌های [w3consortium] یا [W3 Schools][w3schools] مراجعه کنید. [مجموعه برگه‌های تقلب OWASP](https://cheatsheetseries.owasp.org/)
+آموزش‌های [w3consortium] یا [W3 Schools][w3schools] مراجعه کنید.
+[مجموعه برگه‌های تقلب OWASP](https://cheatsheetseries.owasp.org/)
 اطلاعات مورد نیاز برای تولید نرم‌افزار امن را در اختیار توسعه‌دهندگان اپلیکیشن‌های وب قرار می‌دهد:
 
-- برگه تقلب [امنیت HTML5](https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html) طیف گسترده‌ای از کنترل‌ها را، مطابق با [استاندارد زنده HTML][htmlliving] فعلی، توصیف می‌کند.
-- برای CSS به برگه تقلب [CSS](https://cheatsheetseries.owasp.org/cheatsheets/Securing_Cascading_Style_Sheets_Cheat_Sheet.html) مراجعه کنید.
-- هدرهای HTTP باید امن باشند، برگه تقلب [هدرهای پاسخ امنیتی HTTP](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html) را ببینید.
+- برگه تقلب [امنیت HTML5][htmlliving] طیف گسترده‌ای از کنترل‌ها را، مطابق با
+[استاندارد زنده HTML][htmlliving] فعلی، توصیف می‌کند.
+- برای CSS به برگه تقلب [CSS][cscss] مراجعه کنید.
+- هدرهای HTTP باید امن باشند، برگه تقلب [هدرهای پاسخ امنیتی HTTP][csheaders] را ببینید.
 - [امنیت انتقال اکید HTTP][csstrict] را قویاً مد نظر قرار دهید.
-- اگر اپلیکیشن قابلیت آپلود فایل دارد، از برگه تقلب [آپلود فایل](https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html) پیروی کنید.
-- با استفاده از برگه تقلب [سیاست امنیت محتوا](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)، از وجود سیاست امنیت محتوا اطمینان حاصل کنید.
-- از JWT برای یک اپلیکیشن جاوا استفاده می‌کنید؟ به برگه تقلب [توکن وب JSON](https://cheatsheetseries.owasp.org/cheatsheets/JSON_Web_Token_for_Java_Cheat_Sheet.html) مراجعه کنید.
-- اشیاء را ذخیره یا ارسال می‌کنید؟ برگه تقلب [Deserialization (وارسیال‌سازی)](https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html) را بررسی کنید.
+- اگر اپلیکیشن قابلیت آپلود فایل دارد، از برگه تقلب [آپلود فایل][csfile] پیروی کنید.
+- با استفاده از برگه تقلب [سیاست امنیت محتوا][cscsp]، از وجود سیاست امنیت محتوا اطمینان حاصل کنید.
+- از JWT برای یک اپلیکیشن جاوا استفاده می‌کنید؟ به برگه تقلب [توکن وب JSON][csjwt] مراجعه کنید.
+- اشیاء را ذخیره یا ارسال می‌کنید؟ برگه تقلب [Deserialization (وارسیال‌سازی)][csserial] را بررسی کنید.
 
 #### منابع
 
-- [استاندارد زنده HTML][htmlliving] [WHATWG]
+- [استاندارد زنده HTML][htmlliving] [WHATWG][whatwg]
 - OWASP [مجموعه برگه‌های تقلب](https://cheatsheetseries.owasp.org/)
 - OWASP [مدل بلوغ تضمین نرم‌افزار][samm] (SAMM)
 
@@ -143,6 +147,25 @@ NIST یک [آسیب‌پذیری][nistvuln] را اینگونه تعریف می�
 راهنمای توسعه‌دهنده OWASP یک تلاش اجتماعی است؛ اگر چیزی نیاز به تغییر دارد، لطفاً
 [یک ایشو ثبت کنید][issue0401] یا [در گیت‌هاب ویرایش کنید][edit0401].
 
+[csclick]: https://cheatsheetseries.owasp.org/cheatsheets/Clickjacking_Defense_Cheat_Sheet
+[cscreds]: https://cheatsheetseries.owasp.org/cheatsheets/Credential_Stuffing_Prevention_Cheat_Sheet
+[cscsp]: https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html
+[cscss]: https://cheatsheetseries.owasp.org/cheatsheets/Securing_Cascading_Style_Sheets_Cheat_Sheet.html
+[csdom]: https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet
+[csdomclub]: https://cheatsheetseries.owasp.org/cheatsheets/DOM_Clobbering_Prevention_Cheat_Sheet
+[csdos]: https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet
+[csidor]: https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet
+[csinjection]: https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet
+[csosinjection]: https://cheatsheetseries.owasp.org/cheatsheets/OS_Command_Injection_Defense_Cheat_Sheet
+[csldap]: https://cheatsheetseries.owasp.org/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet
+[csproto]: https://cheatsheetseries.owasp.org/cheatsheets/Prototype_Pollution_Prevention_Cheat_Sheet
+[csfile]: https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
+[csheaders]: https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html
+[csjwt]: https://cheatsheetseries.owasp.org/cheatsheets/JSON_Web_Token_for_Java_Cheat_Sheet.html
+[cssql]: https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet
+[csredirect]: https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet
+[csserial]: https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html
+[csquery]: https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet
 [csssrf]: https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html
 [csstrict]: https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html
 [csxss]: https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html
@@ -161,4 +184,4 @@ NIST یک [آسیب‌پذیری][nistvuln] را اینگونه تعریف می�
 [sammv]: https://owaspsamm.org/model/verification/
 [w3consortium]: https://www.w3.org/
 [w3schools]: https://www.w3schools.com/html/
-[whatwg]: <https://whatwg.org/>
+[whatwg]: https://whatwg.org/

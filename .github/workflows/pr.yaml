@@ -150,5 +150,8 @@ jobs:
       - name: Build pdf for ES
         run: mkdocs build --config-file mkdocs-pdf-es.yaml
 
+      - name: Build pdf for FA
+        run: mkdocs build --config-file mkdocs-pdf-fa.yaml
+
       - name: Build pdf for PT-BR
         run: mkdocs build --config-file mkdocs-pdf-pt-br.yaml

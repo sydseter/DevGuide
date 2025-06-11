@@ -87,6 +87,7 @@ and translations help to make is a useful resource for the global AppSec communi
 There are translations in progress:
 
 * [Spanish][es] lead translator Roxana Calderon
+* [Farsi][fa] lead translator alirezakkt
 * [Brazilian Portuguese][pt-br] lead translator Amauri Bizerra
 * [Japanese][ja] lead translator Yuuki Ebihara
 
@@ -206,6 +207,7 @@ OWASP DevGuide: _accessible security for developers_
 [asvs]: https://owasp.org/www-project-application-security-verification-standard/
 [conduct]: code_of_conduct.md
 [es]: https://github.com/OWASP/DevGuide/tree/main/docs/es
+[fa]: https://github.com/OWASP/DevGuide/tree/main/docs/fa
 [ja]: https://github.com/OWASP/DevGuide/tree/main/docs/ja
 [issues]: https://github.com/OWASP/DevGuide/issues/new/choose
 [lychee-install]: https://lychee.cli.rs/
