@@ -31,3 +31,6 @@ drive.google.com/
 
 # SAMM training site blocks automated access
 owaspsamm.thinkific.com/courses/samm
+
+# the BLT site blocks bots
+owaspblt.org

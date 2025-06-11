@@ -26,7 +26,7 @@ Traducción de versión [original en inglés][en0702].
 La Guía del Desarrollador de OWASP es un esfuerzo comunitario;
 si ve algo que necesita cambios, entonces [cree un issue][issue0702] o [edítelo en GitHub][edit0702].
 
-[cve]: https://cve.mitre.org/
+[cve]: https://www.cve.org/
 [edit0702]: https://github.com/OWASP/DevGuide/blob/main/docs/es/05-implementation/02-dependencies/index.md
 [en0702]: https://devguide.owasp.org/en/05-implementation/02-dependencies/
 [issue0702]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2005-implementation/02-dependencies/index
