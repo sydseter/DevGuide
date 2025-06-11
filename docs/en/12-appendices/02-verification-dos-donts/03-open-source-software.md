@@ -20,7 +20,7 @@ We realize it could be challenging, but if feasible, maintain a list of approved
   * Where possible use version pinning
   * Where possible use integrity verification
   * Check for vulnerabilities for the selected binaries in vulnerability disclosure databases like
-    * CVE database (`https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bouncy+castle`)
+    * CVE database (`https://www.cve.org/CVERecord/SearchResults?query=bouncy+castle`)
     * VulnDB (`https://vuldb.com/?id.173918`)
   * If within the budget of your organization, use an SCA tool to scan for vulnerabilities
   * Always vet and perform due-diligence on third-party modules that you install
@@ -84,7 +84,7 @@ We realize it could be challenging, but if feasible, maintain a list of approved
   * Lock files
   * Monitor vulnerabilities with:
     * Check for vulnerabilities for the selected binaries in vulnerability disclosure databases like
-      * CVE database (`https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=bouncy+castle`)
+      * CVE database (`https://www.cve.org/CVERecord/SearchResults?query=bouncy+castle`)
       * VulnDB (`https://vuldb.com/?id.173918`)
   * If within the budget of your organization, use an SCA tool to scan for vulnerabilities
 

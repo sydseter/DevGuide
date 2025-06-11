@@ -78,7 +78,7 @@ si hay algo que necesita cambiarse entonces [cree un issue][issue070201] o [edí
 [adoptium]: https://adoptium.net/
 [cpe]: https://nvd.nist.gov/products/cpe
 [cscicd]: https://cheatsheetseries.owasp.org/cheatsheets/CI_CD_Security_Cheat_Sheet
-[cve]: https://cve.mitre.org/
+[cve]: https://www.cve.org/
 [depcheck]: https://owasp.org/www-project-dependency-check/
 [depcheck-docs]: https://jeremylong.github.io/DependencyCheck/
 [depcheck-download]: https://github.com/jeremylong/DependencyCheck/releases
