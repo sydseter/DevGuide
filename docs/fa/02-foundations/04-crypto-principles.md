@@ -47,7 +47,7 @@
 3. برای تأیید هویت یک یا هر دو طرف در تبادل پیام‌ها, به عنوان مثال تأیید هویت در امنیت لایه انتقال (TLS).
 
 OpenID Connect به طور گسترده به عنوان یک لایه هویتی بر روی پروتکل OAuth 2.0 استفاده می‌شود. به
-[برگه تقلب پروتکل OAuth 2.0](https://cheatsheetseries.owasp.org/cheatsheets/OAuth_2.0_Cheat_Sheet.html) مراجعه کنید.
+[برگه تقلب پروتکل OAuth 2.0](https://cheatsheetseries.owasp.org/cheatsheets/OAuth2_Cheat_Sheet) مراجعه کنید.
 
 #### یکپارچگی (Integrity)
 
@@ -219,7 +219,7 @@ OFB (بازخورد خروجی) و CFB (بازخورد رمز) پشتیبانی 
   * [Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)
   * [Cryptographic Storage](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
   * [Key Management](https://cheatsheetseries.owasp.org/cheatsheets/Key_Management_Cheat_Sheet.html)
-  * [OAuth 2.0 Protocol](https://cheatsheetseries.owasp.org/cheatsheets/OAuth_2.0_Cheat_Sheet.html)
+  * [OAuth 2.0 Protocol](https://cheatsheetseries.owasp.org/cheatsheets/OAuth2_Cheat_Sheet)
   * [SAML Security](https://cheatsheetseries.owasp.org/cheatsheets/SAML_Security_Cheat_Sheet.html)
   * [Secure Product Design](https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet.html)
   * [User Privacy Protection](https://cheatsheetseries.owasp.org/cheatsheets/User_Privacy_Protection_Cheat_Sheet.html)
