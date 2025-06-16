@@ -1,5 +1,6 @@
 این بخش مقدمه‌ای بسیار کوتاه بر برخی مفاهیم مورد استفاده در حوزه امنیت نرم‌افزار است، چرا که این مفاهیم
-ممکن است برای بسیاری از توسعه‌دهندگان اپلیکیشن ناآشنا باشند. [مجموعه برگه‌های تقلب OWASP](https://cheatsheetseries.owasp.org/)
+ممکن است برای بسیاری از توسعه‌دهندگان اپلیکیشن ناآشنا باشند.
+[مجموعه برگه‌های تقلب OWASP](https://cheatsheetseries.owasp.org/)
 توضیحات عمیق‌تری برای این اصول امنیتی ارائه می‌دهد؛ برای مطالعه بیشتر به بخش انتهایی این متن مراجعه کنید.
 
 #### نمای کلی (Overview)
@@ -38,7 +39,7 @@
 
 #### دفاع در عمق (Defense in Depth)
 
-[دفاع در عمق](https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet.html#2-the-principle-of-defense-in-depth)
+[دفاع در عمق][did]
 که به آن دفاع لایه‌ای نیز گفته می‌شود، یک اصل امنیتی است که در آن، دفاع در برابر حمله توسط چندین کنترل
 امنیتی فراهم می‌شود. هدف این است که نقاط شکست کامل (single points of complete compromise) با گنجاندن
 یک سری یا چندین لایه از پادمان‌های امنیتی و اقدامات متقابل برای کاهش ریسک، حذف یا کاهش یابند.
@@ -83,7 +84,7 @@ Defaults) یا «امنیت به صورت پیش‌فرض» (Secure by Default) 
 #### تفکیک وظایف (Separation of Duties)
 
 تفکیک وظایف، که به عنوان
-[تفکیک امتیازات](https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet.html#1-the-principle-of-least-privilege-and-separation-of-duties)
+[تفکیک امتیازات][sop]
 نیز شناخته می‌شود، یک اصل امنیتی است که نیازمند آن است که تکمیل موفقیت‌آمیز یک وظیفه واحد، به دو یا
 چند شرط وابسته باشد که هر یک به تنهایی برای تکمیل آن وظیفه کافی نیستند.
 
@@ -169,15 +170,19 @@ Defaults) یا «امنیت به صورت پیش‌فرض» (Secure by Default) 
 - کنترل‌های پیشگیرانه ۱۰گانه برتر OWASP
   - [C5: Secure by Default Configurations](https://top10proactive.owasp.org/the-top-10/c5-secure-by-default/)
 - سایر موارد
-  - [Compartmentalization (information security)](https://en.wikipedia.org/wiki/Compartmentalization_(information_security)), (Wikipedia)
+  - [Compartmentalization (information security)](https://en.wikipedia.org/wiki/Compartmentalization_(information_security))
   - [Least Functionality](https://csf.tools/reference/nist-sp-800-53/r5/cm/cm-7/), (NIST)
   - [Security by Design](https://pubs.opengroup.org/security/o-esa/#_Toc291061712), (Open Group)
   - [Usability and Manageability](https://pubs.opengroup.org/security/o-esa/#_Toc291061714), (Open Group)
 
 ---
 
-راهنمای توسعه‌دهندگان OWASP یک تلاش جمعی است؛ اگر چیزی نیاز به تغییر دارد، لطفاً
-[یک issue ثبت کنید](https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2002-foundations/03-security-principles)
-یا [در GitHub ویرایش کنید](https://github.com/OWASP/DevGuide/blob/main/docs/en/02-foundations/03-security-principles.md).
+راهنمای توسعه‌دهنده OWASP یک تلاش اجتماعی است؛ اگر چیزی نیاز به تغییر دارد، لطفاً
+[یک ایشو ثبت کنید][issue0403] یا [در گیت‌هاب ویرایش کنید][edit0403].
 
 [^1]: [Operational Management](https://owaspsamm.org/model/operations/operational-management/), (SAMM)
+
+[did]: https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet.html#2-the-principle-of-defense-in-depth
+[edit0403]: https://github.com/OWASP/DevGuide/blob/main/docs/en/02-foundations/03-security-principles.md
+[issue0403]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2002-foundations/03-security-principles
+[sop]: https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet.html#1-the-principle-of-least-privilege-and-separation-of-duties

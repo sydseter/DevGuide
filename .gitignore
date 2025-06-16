@@ -37,6 +37,10 @@
 !docs/es/index.md
 !docs/es/**/
 !docs/es/**/*.md
+!docs/fa/
+!docs/fa/index.md
+!docs/fa/**/
+!docs/fa/**/*.md
 !docs/pt-br/
 !docs/pt-br/index.md
 !docs/pt-br/**/
