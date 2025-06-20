@@ -264,15 +264,15 @@ nav:
       - Gestión de vulnerabilidades:
         - Descripción: es/06-verification/04-vulnerability-management/index.md
         - DefectDojo: es/06-verification/04-vulnerability-management/01-defectdojo.md
-  - 'Developer Guide <- translate to Farsi':
-    - Introduction <- translate to Farsi: fa/index.md
-    - Foundations <- translate to Farsi:
-      - Overview <- translate to Farsi: fa/02-foundations/index.md
-      - Security fundamentals <- translate to Farsi: fa/02-foundations/01-security-fundamentals.md
-      - Secure development and integration <- translate to Farsi: fa/02-foundations/02-secure-development.md
-      - Principles of security <- translate to Farsi: fa/02-foundations/03-security-principles.md
-      - Principles of cryptography <- translate to Farsi: fa/02-foundations/04-crypto-principles.md
-      - OWASP Top 10 <- translate to Farsi: fa/02-foundations/05-top-ten.md
+  - 'Developer Guide in Farsi':
+    - Introduction: fa/index.md
+    - Foundations:
+      - Overview: fa/02-foundations/index.md
+      - Security fundamentals: fa/02-foundations/01-security-fundamentals.md
+      - Secure development and integration: fa/02-foundations/02-secure-development.md
+      - Principles of security: fa/02-foundations/03-security-principles.md
+      - Principles of cryptography: fa/02-foundations/04-crypto-principles.md
+      - OWASP Top 10: fa/02-foundations/05-top-ten.md
   - 'Guia de Desenvolvimento':
     - Introdução: pt-br/index.md
     - Fundamentos:
