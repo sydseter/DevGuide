@@ -264,7 +264,7 @@ nav:
       - Gestión de vulnerabilidades:
         - Descripción: es/06-verification/04-vulnerability-management/index.md
         - DefectDojo: es/06-verification/04-vulnerability-management/01-defectdojo.md
-  - 'Developer Guide in Farsi':
+  - 'راهنمای فارسی':
     - Introduction: fa/index.md
     - Foundations:
       - Overview: fa/02-foundations/index.md
