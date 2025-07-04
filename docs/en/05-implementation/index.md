@@ -8,9 +8,9 @@ and an important goal of Implementation is to ship reliably working software wit
 
 Implementation should include security practices such as :
 
-* Secure Build
-* Secure Deployment
-* Defect Management
+* [Secure Build][sammisb]
+* [Secure Deployment][sammisd]
+* [Defect Management][sammidm]
 
 Implementation is where the application / system begins to take shape; source code is written and tests are created.
 The implementation of the application follows a secure development lifecycle, with security built in from the start.
@@ -18,9 +18,6 @@ The implementation of the application follows a secure development lifecycle, wi
 The implementation will use a secure method of source code control and storage to fulfill the design security requirements.
 The development team will be referring to documentation advising them of best practices,
 they will be using secure libraries wherever possible in addition to checking and tracking external dependencies.
-
-Much of the skill of implementation comes from experience, and taking into account the Do's and Don'ts
-of secure development is an important knowledge activity in itself.
 
 ----
 
@@ -31,3 +28,6 @@ then [submit an issue][issue0700] or [edit on GitHub][edit0700].
 [issue0700]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2005-implementation/index
 [sammm]: https://owaspsamm.org/model/
 [sammi]: https://owaspsamm.org/model/implementation/
+[sammidm]: https://owaspsamm.org/model/implementation/defect-management/
+[sammisb]: https://owaspsamm.org/model/implementation/secure-build/
+[sammisd]: https://owaspsamm.org/model/implementation/secure-deployment/

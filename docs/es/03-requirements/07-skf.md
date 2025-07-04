@@ -14,18 +14,15 @@ porque es un proyecto insignia para cualquier organización.
 #### ¿Qué es el Security Knowledge Framework?
 
 El [SKF][skf] es una aplicación web que está disponible en el [repositorio de github][skfinstall].
-Hay una [versión demo][skfdemo] de SKF que es útil para explorar los múltiples beneficios del SKF.
+Hay una versión demo de SKF que es útil para explorar los múltiples beneficios del SKF.
 Tenga en cuenta que SKF está en proceso de migración a un [nuevo repositorio][skfrepo]
 por lo que el enlace de descarga puede cambiar.
 
 El SKF proporciona capacitación y orientación para la seguridad de aplicaciones:
 
 * [Organizador][skfreqs] de requisitos
-* [Cursos][skfdemo] de aprendizaje:
-  * Desarrollo de Software Seguro (LFD121)
-  * Entendiendo las 10 Principales Amenazas de Seguridad de OWASP (SKF100)
-  * Desarrollo de Software Seguro: Implementación (LFD105x)
-* [Laboratorios][skflabs] de práctica
+* Cursos de aprendizaje
+* Laboratorios de práctica
 * Documentación sobre [instalación y uso][skfdocs] del SKF
 
 #### ¿Por qué usar el SKF para requisitos?
@@ -61,7 +58,6 @@ La serie OWASP Spotlight proporciona una visión general del SKF:
 #### Referencias
 
 * [Security Knowledge Framework][skf] (SKF)
-* [Cursos y laboratorios de SKF][skfdemo]
 * [Requisitos de SKF][skfreqs]
 * OWASP [Estándar de Verificación de Seguridad de Aplicaciones][asvs] (ASVS)
 
@@ -77,10 +73,8 @@ entonces [cree un issue][issue0507] o [edítelo en GitHub][edit0507].
 [en0507]: https://devguide.owasp.org/en/03-requirements/07-skf/
 [issue0507]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2003-requirements/07-skf
 [skf]: https://www.securityknowledgeframework.org/
-[skfdemo]: https://secureby.design/
 [skfdocs]: https://skf.readme.io/docs/introduction
 [skfinstall]: https://github.com/blabla1337/skf-flask/releases
-[skflabs]: https://secureby.design/labs
 [skfrepo]: https://github.com/Security-Knowledge-Framework
 [skfreqs]: https://github.com/Security-Knowledge-Framework/SKF-requirements-tool
 [spotlight07]: https://youtu.be/TFX_ZBy6lNY
