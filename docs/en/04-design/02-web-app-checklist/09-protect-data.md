@@ -6,7 +6,22 @@ Refer to proactive control [C2: Use Cryptography to Protect Data][control2] and 
 for more context from the OWASP Top 10 Proactive Controls project,
 and use the list below as suggestions for a checklist that has been tailored for the individual project.
 
-#### 1. Data protection
+#### 1. Cryptographic practices
+
+1. Use peer reviewed and open solution cryptographic modules
+2. All cryptographic functions used to protect secrets from the application user must be implemented on a trusted system
+3. Cryptographic modules must fail securely
+4. Ensure all random elements such as numbers, file names, UUID and strings are generated
+    using the cryptographic module approved random number generator
+5. Cryptographic modules used by the application are compliant to FIPS 140-2 or an equivalent standard
+6. Establish and utilize a policy and process for how cryptographic keys will be managed
+7. Ensure that any secret key is protected from unauthorized access
+8. Store keys in a proper secrets vault as described below
+9. Use independent keys when multiple keys are required
+10. Build support for changing algorithms and keys when needed
+11. Build application features to handle a key rotation
+
+#### 2. Data protection
 
 1. Classify data according to the level of sensitivity
 2. Implement appropriate access controls for sensitive data
@@ -25,22 +40,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 15. Set a referrer policy to prevent leakage of sensitive data to third-party services via the 'Referer' HTTP request header
     field. This can be done using the Referrer-Policy HTTP response header field or via HTML element attributes
 
-#### 2. Cryptographic practices
-
-1. Use peer reviewed and open solution cryptographic modules
-2. All cryptographic functions used to protect secrets from the application user must be implemented on a trusted system
-3. Cryptographic modules must fail securely
-4. Ensure all random elements such as numbers, file names, UUID and strings are generated
-    using the cryptographic module approved random number generator
-5. Cryptographic modules used by the application are compliant to FIPS 140-2 or an equivalent standard
-6. Establish and utilize a policy and process for how cryptographic keys will be managed
-7. Ensure that any secret key is protected from unauthorized access
-8. Store keys in a proper secrets vault as described below
-9. Use independent keys when multiple keys are required
-10. Build support for changing algorithms and keys when needed
-11. Build application features to handle a key rotation
-
-#### 2. Memory management
+#### 3. Memory management
 
 1. Explicitly initialize all variables and data stores
 2. Check that any buffers are as large as specified
@@ -52,7 +52,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 8. Protect shared variables and resources from inappropriate concurrent access
 9. Avoid the use of known vulnerable functions (e.g., printf, strcat, strcpy etc.)
 
-#### 3. Encrypting Data in Transit
+#### 4. Encrypting Data in Transit
 
 1. Utilize TLS connections for all connectivity between a client and external-facing, HTTP-based services
 2. Ensure the TLS connections do not fall back to insecure or unencrypted communication
