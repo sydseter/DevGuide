@@ -6,7 +6,7 @@ Refer to proactive control [C5: Secure By Default Configurations][control5] and 
 for more context from the OWASP Top 10 Proactive Controls project,
 and use the lists below as suggestions for a checklist that has been tailored for the individual project.
 
-1. System configuration
+#### 1. System configuration
 
 1. Restrict applications, processes and service accounts to the least privileges possible
 2. Remove all unnecessary functionality and files
