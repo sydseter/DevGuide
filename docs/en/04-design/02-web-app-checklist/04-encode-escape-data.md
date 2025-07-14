@@ -15,7 +15,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 2. Conduct all output encoding on a trusted system
 3. Utilize a standard, tested routine for each type of outbound encoding
 4. Specify character sets, such as UTF-8, for all outputs
-5. Apply canonicalization to convert unicode data into a standard form
+5. Apply canonicalization to convert unicode data into a standard form and address obfuscation attacks
 6. Ensure the output encoding is safe for all target systems
 7. In particular sanitize all output used for operating system commands
 8. Sanitize potentially dangerous characters before using the data to call another service
