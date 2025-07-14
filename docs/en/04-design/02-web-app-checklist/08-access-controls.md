@@ -5,7 +5,7 @@ Refer to proactive control [C1: Implement Access Controls][control1] and its [ch
 for more context from the OWASP Top 10 Proactive Controls project,
 and use the list below as suggestions for a checklist that has been tailored for the individual project.
 
-#### 1. Authorization
+#### 2. Authorization
 
 1. Design access control / authorization thoroughly up-front
 2. Force all requests to go through access control checks unless public
@@ -18,7 +18,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 7. Access Control criteria and/or processes not testable through automated tests should be documented so that they
    can be manually tested
 
-#### 2. Access control
+#### 3. Access control
 
 1. Enforce authorization controls on every request
 2. Use only trusted system objects for making access authorization decisions
@@ -42,6 +42,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 15. Server side implementation and presentation layer representations of access control rules should not differ in such a way
     that they allow for business functionality and rules to be compromised
 16. Enforce application logic flows to comply with business rules
+17. If the application must run with elevated privileges, raise privileges as late as possible, and drop as soon as possible
 
 #### References
 
