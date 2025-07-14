@@ -2,7 +2,7 @@
 Session management is a process by which a server maintains the state of the users authentication
 so that the user may continue to use the system without re-authenticating.
 
-Refer to proactive control [C7: Implement Digital Identity][control7] and its [cheatsheets][csproactive-c6]
+Refer to proactive control [C7: Secure Digital Identities][control7] and its [cheatsheets][csproactive-c6]
 for more context from the OWASP Top 10 Proactive Controls project,
 and use the list below as suggestions for a checklist that has been tailored for the individual project.
 
