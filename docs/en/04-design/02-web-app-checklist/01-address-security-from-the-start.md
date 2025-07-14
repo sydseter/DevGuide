@@ -4,7 +4,7 @@ Refer to proactive control [C4: Address Security form the Start][control4] and i
 for more context from the OWASP Top 10 Proactive Controls project,
 and use the lists below as suggestions for a checklist that has been tailored for the individual project.
 
-#### 1. System configuration
+#### 1. Access Control Design
 
 1. If the application must run with elevated privileges, raise privileges as late as possible, and drop as soon as possible
 
