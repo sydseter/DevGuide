@@ -1,7 +1,7 @@
 Secure coding libraries and software frameworks with embedded security help software developers guard against
 security-related design and implementation flaws.
 
-Refer to proactive control [C4: Address Security from the Start][control4]
+Refer to proactive control [C6: Keep your Components Secure][control6]
 and its [cheatsheets][csproactive-c2] for more context from the OWASP Top 10 Proactive Controls project.
 
 For technology specific checklists refer to the appropriate OWASP Cheat Sheets:
@@ -84,7 +84,7 @@ then [submit an issue][issue060202] or [edit on GitHub][edit060202].
 [cswebservice]: https://cheatsheetseries.owasp.org/cheatsheets/Web_Service_Security_Cheat_Sheet
 [csxml]: https://cheatsheetseries.owasp.org/cheatsheets/XML_Security_Cheat_Sheet
 [csproactive-c2]: https://cheatsheetseries.owasp.org/IndexProactiveControls.html#c2-leverage-security-frameworks-and-libraries
-[control4]: https://top10proactive.owasp.org/the-top-10/c4-secure-architecture/
+[control6]: [https://top10proactive.owasp.org/the-top-10/c6-use-secure-dependencies/]
 [dependency]: https://owasp.org/www-project-dependency-check/
 [edit060202]: https://github.com/OWASP/DevGuide/blob/main/docs/en/04-design/02-web-app-checklist/02-frameworks-libraries.md
 [issue060202]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-design/02-web-app-checklist/02-frameworks-libraries
