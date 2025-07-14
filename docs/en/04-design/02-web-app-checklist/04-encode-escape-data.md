@@ -5,7 +5,7 @@ The target system may be another software component or it may be reflected back 
 such as operating system commands,
 so encoding and escaping output data helps to provide defense in depth for the system as a whole.
 
-Refer to proactive control [C3: Validate all Input & Handle Exceptions][control3] and its [cheatsheets][csproactive-c4]
+Refer to proactive control [C3: Validate all Input & Handle Exceptions][control3] and its [cheatsheets][csproactive-c4] and [C10: Stop Server Side Request Forgery][control10] together with [Server-Side Request Forgery Prevention Cheat Sheet][csproactive-c10]
 for more context from the OWASP Top 10 Proactive Controls project,
 and use the list below as suggestions for a checklist that has been tailored for the individual project.
 
@@ -40,7 +40,9 @@ The OWASP Developer Guide is a community effort; if there is something that need
 then [submit an issue][issue060204] or [edit on GitHub][edit060204].
 
 [csproactive-c4]: https://cheatsheetseries.owasp.org/IndexProactiveControls.html#c4-encode-and-escape-data
+[csproactive-c10]: https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html
 [control3]: https://top10proactive.owasp.org/the-top-10/c3-validate-input-and-handle-exceptions/
+[control10]: https://top10proactive.owasp.org/the-top-10/c10-stop-server-side-request-forgery/
 [edit060204]: https://github.com/OWASP/DevGuide/blob/main/docs/en/04-design/02-web-app-checklist/04-encode-escape-data.md
 [encoder]: https://www.owasp.org/index.php/OWASP_Java_Encoder_Project
 [ipcs]: https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet
