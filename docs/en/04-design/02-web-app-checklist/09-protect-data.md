@@ -25,6 +25,21 @@ and use the list below as suggestions for a checklist that has been tailored for
 15. Set a referrer policy to prevent leakage of sensitive data to third-party services via the 'Referer' HTTP request header
     field. This can be done using the Referrer-Policy HTTP response header field or via HTML element attributes
 
+#### 2. Cryptographic practices
+
+1. Use peer reviewed and open solution cryptographic modules
+2. All cryptographic functions used to protect secrets from the application user must be implemented on a trusted system
+3. Cryptographic modules must fail securely
+4. Ensure all random elements such as numbers, file names, UUID and strings are generated
+    using the cryptographic module approved random number generator
+5. Cryptographic modules used by the application are compliant to FIPS 140-2 or an equivalent standard
+6. Establish and utilize a policy and process for how cryptographic keys will be managed
+7. Ensure that any secret key is protected from unauthorized access
+8. Store keys in a proper secrets vault as described below
+9. Use independent keys when multiple keys are required
+10. Build support for changing algorithms and keys when needed
+11. Build application features to handle a key rotation
+
 #### 2. Memory management
 
 1. Explicitly initialize all variables and data stores
