@@ -1,5 +1,4 @@
-A security requirement is a statement of security functionality that ensures software security is being satisfied.
-Security requirements are derived from industry standards, applicable laws, and a history of past vulnerabilities.
+When designing a new application, creating a secure architecture prevents vulnerabilities before they even become part of the application. This prevents costly repairs and repudiation problems.
 
 Refer to proactive control [C4: Address Security form the Start][control4] and its [cheatsheets][csproactive-c1]
 for more context from the OWASP Top 10 Proactive Controls project,
