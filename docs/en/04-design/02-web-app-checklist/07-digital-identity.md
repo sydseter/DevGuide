@@ -8,33 +8,32 @@ and use the list below as suggestions for a checklist that has been tailored for
 
 #### 1. Authentication
 
-1. Design access control authentication thoroughly up-front
-2. Require authentication for all pages and resources, except those specifically intended to be public
-3. All authentication controls must be enforced on a trusted system
-4. All authentication controls should fail securely
-5. Establish and utilize standard, tested, authentication services whenever possible
-6. If using third party code for authentication inspect the code carefully
+1. Require authentication for all pages and resources, except those specifically intended to be public
+2. All authentication controls must be enforced on a trusted system
+3. All authentication controls should fail securely
+4. Establish and utilize standard, tested, authentication services whenever possible
+5. If using third party code for authentication inspect the code carefully
     to ensure it is not affected by any malicious code
-7. Use a centralized implementation for all authentication controls
-8. Segregate authentication logic from the resource being requested and
+6. Use a centralized implementation for all authentication controls
+7. Segregate authentication logic from the resource being requested and
     use redirection to and from the centralized authentication control
-9. Administrative and account management must be at least as secure as the primary authentication mechanism
-10. Use [Multi-Factor Authentication][csmfa] (MFA) for sensitive or high value transactional accounts
-11. Re-authenticate users prior to performing critical operations
-12. Enforce account disabling after an established number of invalid login attempts
-13. Utilize authentication for connections to external systems that involve sensitive information or functions
-14. Authentication credentials for accessing services external to the application should be stored in a secure store
-15. Use only HTTP POST requests to transmit authentication credentials
-16. Force all requests to go through access control checks unless public
-17. Do not hard code access controls that are role based
-18. Log all access control events
-19. Validate the authentication data only on completion of all data input
-20. Authentication failure responses should not indicate which part of the authentication data was incorrect.
+8. Administrative and account management must be at least as secure as the primary authentication mechanism
+9. Use [Multi-Factor Authentication][csmfa] (MFA) for sensitive or high value transactional accounts
+10. Re-authenticate users prior to performing critical operations
+11. Enforce account disabling after an established number of invalid login attempts
+12. Utilize authentication for connections to external systems that involve sensitive information or functions
+13. Authentication credentials for accessing services external to the application should be stored in a secure store
+14. Use only HTTP POST requests to transmit authentication credentials
+15. Force all requests to go through access control checks unless public
+16. Do not hard code access controls that are role based
+17. Log all access control events
+18. Validate the authentication data only on completion of all data input
+19. Authentication failure responses should not indicate which part of the authentication data was incorrect.
    E.g. Through giving different textual response or HTTP response codes
-21. Authentication failure responses should not give away the existent of user accounts by allowing the response time to
+20. Authentication failure responses should not give away the existent of user accounts by allowing the response time to
    differ, depending on whether a username exist or not. Use a DB transaction that looks for a fake user profile in case the
    username doesn't exist
-22. Add a random tunable delay for authentication failures to defer brute force attacks and protect against timing attacks
+21. Add a random tunable delay for authentication failures to defer brute force attacks and protect against timing attacks
 
 #### 2. Passwords
 
