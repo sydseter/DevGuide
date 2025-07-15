@@ -20,22 +20,18 @@ and use the list below as suggestions for a checklist that has been tailored for
 9. Use independent keys when multiple keys are required
 10. Build support for changing algorithms and keys when needed
 11. Build application features to handle a key rotation
+12. Store application-level secrets in a secrets vault
+13. Check that secrets are not stored in code, config files or environment variables
 
 #### 2. Data protection
 
 1. Classify data according to the level of sensitivity
 2. Implement appropriate access controls for sensitive data
 5. Avoid storing sensitive data when at all possible
-6. Ensure sensitive data at rest is cryptographically protected to avoid unauthorized disclosure and modification
-7. Purge sensitive data when that data is no longer required
-8. Store application-level secrets in a secrets vault
-9. Check that secrets are not stored in code, config files or environment variables
-10. Implement least privilege, restricting access to functionality, data and system information
-11. Protect all cached or temporary copies of sensitive data from unauthorized access
-12. Purge those temporary copies of sensitive data as soon as they are no longer required
-13. Do not include sensitive information in the URL or query string, such as an API key or session token
-14. Disable client side caching on pages containing sensitive information (e.g. Cache-Control: no-store)
-15. Set a referrer policy to prevent leakage of sensitive data to third-party services via the 'Referer' HTTP request header
+6. Implement least privilege, restricting access to functionality, data and system information
+7. Do not include sensitive information in the URL or query string, such as an API key or session token
+8. Disable client side caching on pages containing sensitive information (e.g. Cache-Control: no-store)
+9. Set a referrer policy to prevent leakage of sensitive data to third-party services via the 'Referer' HTTP request header
     field. This can be done using the Referrer-Policy HTTP response header field or via HTML element attributes
 
 #### 3. Memory management
@@ -50,8 +46,12 @@ and use the list below as suggestions for a checklist that has been tailored for
 8. Protect shared variables and resources from inappropriate concurrent access
 9. Avoid the use of known vulnerable functions (e.g., printf, strcat, strcpy etc.)
 
-
 #### 4. Protct Data at Rest
+
+1. Ensure sensitive data at rest is cryptographically protected to avoid unauthorized disclosure and modification
+2. Purge sensitive data when that data is no longer required
+3. Protect all cached or temporary copies of sensitive data from unauthorized access
+4. Purge those temporary copies of sensitive data as soon as they are no longer required
 
 #### 5. Protct Data in Transit
 
