@@ -40,6 +40,19 @@ and use the list below as suggestions for a checklist that has been tailored for
 5. Restrict or monitor incoming and outgoing network connectivity from containers or servers that deserialize
 6. Monitor deserialization, for example alerting if a user agent constantly deserializes
 
+#### 4. File validation
+
+1. Do not pass user supplied data directly to any dynamic include function
+2. Limit the type of files that can be uploaded to only those types that are needed for business purposes
+3. Validate uploaded files are the expected type by checking file headers rather than by file extension
+4. Prevent or restrict the uploading of any file that may be interpreted by the web server.
+5. When referencing existing files, use an allow-list of allowed file names and types
+6. Do not pass user supplied data into a dynamic redirect
+7. Do not pass directory or file paths, use index values mapped to pre-defined list of paths
+8. Never send the absolute file path to the client
+9. Scan user uploaded files for viruses and malware
+
+
 #### References
 
 * OWASP [Cheat Sheet: Input Validation][ivcs]
