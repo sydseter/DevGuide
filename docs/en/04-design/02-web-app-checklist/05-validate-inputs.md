@@ -53,7 +53,6 @@ and use the list below as suggestions for a checklist that has been tailored for
 8. Never send the absolute file path to the client
 9. Scan user uploaded files for viruses and malware
 
-
 #### References
 
 * OWASP [Cheat Sheet: Input Validation][ivcs]
