@@ -11,20 +11,20 @@ and use the list below as suggestions for a checklist that has been tailored for
 2. Force all requests to go through access control checks unless public
 3. Deny by default; if a request is not specifically allowed then it is denied
 4. Apply least privilege, providing the least access as is necessary
-6. Log all authorization events
-7. Create unit and integration test to document and verify an application's business rules, data types and access
+5. Log all authorization events
+6. Create unit and integration test to document and verify an application's business rules, data types and access
    authorization criteria and/or processes so that access can be properly provisioned and controlled for restricting
    function-level, data-specific, and field-level access based on consumer permissions and resource attributes
-8. Access Control criteria and/or processes not testable through automated tests should be documented so that they
+7. Access Control criteria and/or processes not testable through automated tests should be documented so that they
    can be manually tested
-9. Use only trusted system objects for making access authorization decisions
-10. Use a single site-wide component to check authorization
-11. Access control should fail securely
-12. Deny all access if the application cannot access its security configuration information
-13. Segregate privileged logic from other application code
-14. Do not hard code access controls that are role based
-15. Enforce application logic flows to comply with business rules
-16. Server side implementation and presentation layer representations of access control rules should not differ in such a way
+8. Use only trusted system objects for making access authorization decisions
+9. Use a single site-wide component to check authorization
+10. Access control should fail securely
+11. Deny all access if the application cannot access its security configuration information
+12. Segregate privileged logic from other application code
+13. Do not hard code access controls that are role based
+14. Enforce application logic flows to comply with business rules
+15. Server side implementation and presentation layer representations of access control rules should not differ in such a way
     that they allow for business functionality and rules to be compromised
 
 #### 2. Access control Management
