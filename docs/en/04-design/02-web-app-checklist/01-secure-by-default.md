@@ -17,7 +17,7 @@ and use the lists below as suggestions for a checklist that has been tailored fo
 6. Isolate development environments from production and provide access only to authorized development and test groups
 7. Implement a software change control system to manage and record changes to the code both in development and production
 8. Prevent accidentally accessible and sensitive pages from appearing in search engines using a robots.txt file,
-   the X-Robots-Tag response header or a robots html meta tag
+    the X-Robots-Tag response header or a robots html meta tag
 10. Disable unnecessary HTTP methods, such as WebDAV extensions. If an extended HTTP method that supports file handling is
     required, utilize a well-vetted authentication mechanism
 12. Remove unnecessary information from HTTP response headers related to the OS, web-server version and application
@@ -36,15 +36,15 @@ and use the lists below as suggestions for a checklist that has been tailored fo
 3. Turn off execution privileges on file upload directories
 4. Ensure application files and resources are read-only
 5. Restrict access to files or other resources, including those outside the application's direct control using an allow list
-   or the equivalent thereof.
+    or the equivalent thereof.
 
 #### 3. Cloud security
 
 1. 6. Enforce JIT (Just-In-Time) access management
 2. Use security vetted container images that is scanned for package and component vulnerabilities and pulled from a private
-   container registry
+    container registry
 4. Utilize Infrastructure-as-Code templates for automated provisioning and configuration of your cloud and on-
-   premises infrastructure
+    premises infrastructure
 6. Utilize Policy-as-Code to enforce policies including privilege assignments
 
 ----
