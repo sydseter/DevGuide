@@ -44,10 +44,9 @@ In addition consider the following extra checks for frameworks and libraries.
 7. Reduce the attack surface by encapsulating the library and expose only the required behavior into your software
 8. Use tested and approved managed code rather than creating new unmanaged code for common tasks
 9. Utilize task specific built-in APIs to conduct operating system tasks
-10. Do not allow the application to issue commands directly to the Operating System
-11. Use checksums or hashes to verify the integrity of interpreted code, libraries, executables, and configuration files
-12. Restrict users from generating new code or altering existing code
-13. Implement safe updates using encrypted channels
+10. Use checksums or hashes to verify the integrity of interpreted code, libraries, executables, and configuration files
+11. Restrict users from generating new code or altering existing code
+12. Implement safe updates using encrypted channels
 14. Use cryptographic signatures when updating your code and ensure the package manager verify those signatures
 
 #### References
