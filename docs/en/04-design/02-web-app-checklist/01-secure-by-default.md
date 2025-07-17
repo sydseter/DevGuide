@@ -17,16 +17,17 @@ and use the lists below as suggestions for a checklist that has been tailored fo
 6. Isolate development environments from production and provide access only to authorized development and test groups
 7. Implement a software change control system to manage and record changes to the code both in development and production
 8. Prevent accidentally accessible and sensitive pages from appearing in search engines using a robots.txt file,
-    the X-Robots-Tag response header or a robots html meta tag
-10. Disable unnecessary HTTP methods, such as WebDAV extensions. If an extended HTTP method that supports file handling is
+the
+    X-Robots-Tag response header or a robots html meta tag
+9. Disable unnecessary HTTP methods, such as WebDAV extensions. If an extended HTTP method that supports file handling is
     required, utilize a well-vetted authentication mechanism
-12. Remove unnecessary information from HTTP response headers related to the OS, web-server version and application
+10. Remove unnecessary information from HTTP response headers related to the OS, web-server version and application
     frameworks unless implemented to confuse an attacker
-14. Ensure the .git, .svn folders or any source control metadata aren't deployed together alongside the application in
+11. Ensure the .git, .svn folders or any source control metadata aren't deployed together alongside the application in
     away that makes these directly accessible externally or indirectly through the application
-16. Do not store passwords, secrets, connection strings, key material, secret management integrations or other
+12. Do not store passwords, secrets, connection strings, key material, secret management integrations or other
     sensitive information in clear text or in any non-cryptographically secure manner on the client, in source code, or build artifacts
-18. Remove or restrict access to internal application and system documentation (such as for internal APIs) as this can
+13. Remove or restrict access to internal application and system documentation (such as for internal APIs) as this can
     reveal backend system or other useful information to attackers
 
 #### 2. File Management
@@ -40,12 +41,12 @@ and use the lists below as suggestions for a checklist that has been tailored fo
 
 #### 3. Cloud security
 
-1. 6. Enforce JIT (Just-In-Time) access management
+1. Enforce JIT (Just-In-Time) access management
 2. Use security vetted container images that is scanned for package and component vulnerabilities and pulled from a private
     container registry
-4. Utilize Infrastructure-as-Code templates for automated provisioning and configuration of your cloud and on-
+3. Utilize Infrastructure-as-Code templates for automated provisioning and configuration of your cloud and on-
     premises infrastructure
-6. Utilize Policy-as-Code to enforce policies including privilege assignments
+4. Utilize Policy-as-Code to enforce policies including privilege assignments
 
 ----
 
