@@ -31,20 +31,21 @@ and use the list below as suggestions for a checklist that has been tailored for
 8. If long authenticated sessions are allowed, periodically re-validate a user's authorization
 9. Implement account auditing and enforce the disabling of unused accounts
 10. A new account should have minimal or no access by default
-11. The application must support termination of sessions when authorization ceases
-12. Restrict function-level access to consumers with explicit permissions
-13. Restrict direct object references to only authorized users with explicit permissions to specific data items  
+11. For highly sensitive accounts implement Just in Time (JIT), Just Enough Access (JEA) management and avoid the use of admin accounts with global access
+12. The application must support termination of sessions when authorization ceases
+13. Restrict function-level access to consumers with explicit permissions
+14. Restrict direct object references to only authorized users with explicit permissions to specific data items  
     to mitigate insecure direct object reference (IDOR) and broken object level authorization (BOLA)
-14. Restrict access to user and data attributes to consumers with explicit permissions to specific fields to mitigate broken
+15. Restrict access to user and data attributes to consumers with explicit permissions to specific fields to mitigate broken
     object property level authorization (BOPLA)
-15. Restrict access security-relevant configuration information to only authorized users who have been allowed access through
+16. Restrict access security-relevant configuration information to only authorized users who have been allowed access through
     multiple layers of security, including continuous consumer identity verification, device security posture assessment, and
     contextual risk analysis
-16. Server side implementation and presentation layer representations of access control rules should not differ in such a way
+17. Server side implementation and presentation layer representations of access control rules should not differ in such a way
     that they allow for business functionality and rules to be compromised
-17. Enforce application logic flows to comply with business rules
-18. If the application must run with elevated privileges, raise privileges as late as possible, and drop as soon as possible
-19. Do not hard code access controls that are role based
+18. Enforce application logic flows to comply with business rules
+19. If the application must run with elevated privileges, raise privileges as late as possible, and drop as soon as possible
+20. Do not hard code access controls that are role based
 
 #### References
 
