@@ -32,6 +32,8 @@ and use the lists below as suggestions for a checklist that has been tailored fo
 #### 3. Cloud security
 
 1. Use security vetted container images that is scanned for package and component vulnerabilities and pulled from a private container registry
+2. Utilize Infrastructure-as-Code templates for automated provisioning and configuration of your cloud and on-premises infrastructure
+3. Utilize Policy-as-Code to enforce policies including privilege assignments
 
 ----
 
