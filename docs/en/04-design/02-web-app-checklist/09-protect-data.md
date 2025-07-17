@@ -37,6 +37,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 5. Build application features to handle a secret key rotation
 6. Ensure that secrets are not stored in code, config files or environment variables
 8. Scan code repositories to detect accidentally added secrets and credentials
+9. Log all authorized access to a secret key for forensic purposes
 
 #### 4. Memory management
 
