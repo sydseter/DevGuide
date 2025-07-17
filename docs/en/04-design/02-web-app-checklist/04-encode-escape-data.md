@@ -5,7 +5,9 @@ The target system may be another software component or it may be reflected back 
 such as operating system commands,
 so encoding and escaping output data helps to provide defense in depth for the system as a whole.
 
-Refer to proactive control [C3: Validate all Input & Handle Exceptions][control3] and its [cheatsheets][csproactive-c4] and [C10: Stop Server Side Request Forgery][control10] together with [Server-Side Request Forgery Prevention Cheat Sheet][csproactive-c10]
+Refer to proactive control [C3: Validate all Input & Handle Exceptions][control3] and its [cheatsheets][csproactive-c4] and 
+[C10: Stop Server Side Request Forgery][control10] together with
+[Server-Side Request Forgery Prevention Cheat Sheet][csproactive-c10]
 for more context from the OWASP Top 10 Proactive Controls project,
 and use the list below as suggestions for a checklist that has been tailored for the individual project.
 
