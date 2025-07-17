@@ -13,17 +13,9 @@ and use the list below as suggestions for a checklist that has been tailored for
 3. Cryptographic modules must fail securely
 4. Ensure all random elements such as numbers, file names, UUID and strings are generated
     using the cryptographic module approved random number generator
-5. Cryptographic modules used by the application are compliant to FIPS 140-2 or an equivalent standard
-6. Establish and utilize a policy and process for how cryptographic keys will be managed
-7. Ensure that any secret key is protected from unauthorized access
-8. Store keys in a proper secrets vault as described below
-9. Use independent keys when multiple keys are required
-10. Build support for changing algorithms and keys when needed
-11. Build application features to handle a key rotation
-12. Store application-level secrets in a secrets vault
-13. Check that secrets are not stored in code, config files or environment variables
-14. Scan code repositories to detect accidentally added secrets and credentials
-15. Don't implement your own cryptographic protocols or routines. Use existing security vetted library and frameworks
+5. Build support for changing algorithms when needed
+6. Cryptographic modules used by the application are compliant to FIPS 140-2 or an equivalent standard
+7. Don't implement your own cryptographic protocols or routines. Use existing security vetted library and frameworks
 
 #### 2. Data protection
 
@@ -36,7 +28,17 @@ and use the list below as suggestions for a checklist that has been tailored for
 9. Set a referrer policy to prevent leakage of sensitive data to third-party services via the 'Referer' HTTP request header
     field. This can be done using the Referrer-Policy HTTP response header field or via HTML element attributes
 
-#### 3. Memory management
+#### 3. Secret Management
+
+1. Establish and utilize a policy and process for how cryptographic keys will be managed
+2. Ensure that any secret key is protected from unauthorized access
+3. Store keys and application-level secrets in a proper secrets vault
+4. Use independent keys when multiple keys are required
+5. Build application features to handle a secret key rotation
+6. Ensure that secrets are not stored in code, config files or environment variables
+8. Scan code repositories to detect accidentally added secrets and credentials
+
+#### 4. Memory management
 
 1. Explicitly initialize all variables and data stores
 2. Check that any buffers are as large as specified
@@ -48,7 +50,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 8. Protect shared variables and resources from inappropriate concurrent access
 9. Avoid the use of known vulnerable functions (e.g., printf, strcat, strcpy etc.)
 
-#### 4. Protct Data at Rest
+#### 5. Protct Data at Rest
 
 1. Ensure sensitive data at rest is cryptographically protected to avoid unauthorized disclosure and modification
 2. Purge sensitive data when that data is no longer required
