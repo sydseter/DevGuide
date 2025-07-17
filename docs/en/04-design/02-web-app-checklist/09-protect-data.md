@@ -22,6 +22,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 11. Build application features to handle a key rotation
 12. Store application-level secrets in a secrets vault
 13. Check that secrets are not stored in code, config files or environment variables
+14. Don't implement your own cryptographic protocols or routines. Use existing security vetted library and frameworks
 
 #### 2. Data protection
 
