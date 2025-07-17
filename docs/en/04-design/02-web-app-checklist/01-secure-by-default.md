@@ -29,6 +29,10 @@ and use the lists below as suggestions for a checklist that has been tailored fo
 4. Ensure application files and resources are read-only
 5. Restrict access to files or other resources, including those outside the application's direct control using an allow list or the equivalent thereof.
 
+#### 3. Cloud security
+
+1. Use security vetted container images that is scanned for package and component vulnerabilities and pulled from a private container registry
+
 ----
 
 The OWASP Developer Guide is a community effort; if there is something that needs changing
