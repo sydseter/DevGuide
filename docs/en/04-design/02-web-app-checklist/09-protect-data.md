@@ -12,7 +12,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 2. All cryptographic functions used to protect secrets from the application user must be implemented on a trusted system
 3. Cryptographic modules must fail securely
 4. Ensure all random elements such as numbers, file names, UUID and strings are generated
-    using the cryptographic module approved random number generator
+    using the cryptographic module approved secure random number generator
 5. Build support for changing algorithms when needed
 6. Cryptographic modules used by the application are compliant to FIPS 140-2 or an equivalent standard
 7. Don't implement your own cryptographic protocols or routines. Use existing security vetted library and frameworks
@@ -65,8 +65,9 @@ and use the list below as suggestions for a checklist that has been tailored for
 3. Utilize TLS connections for all connectivity between a client and external-facing, HTTP-based services
 4. Ensure the TLS connections do not fall back to insecure or unencrypted communication
 5. Turn off older protocols to avoid protocol downgrade attacks
-6. Utilize a single standard TLS implementation with (preferably the latest) secure version of TLS
-7. Ensure the TLS connections are configured appropriately to validate certificates received before communicating and
+6. Do not offer HTTP. Disable both HTTP and SSL compression
+7. Utilize a single standard TLS implementation with (preferably the latest) secure version of TLS
+8. Ensure the TLS connections are configured appropriately to validate certificates received before communicating and
    checking revocation status
 
 #### References
