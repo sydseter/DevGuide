@@ -29,9 +29,9 @@ and use the lists below as suggestions for a checklist that has been tailored fo
 ----
 
 The OWASP Developer Guide is a community effort; if there is something that needs changing
-then [submit an issue][issue060202] or [edit on GitHub][edit060202].
+then [submit an issue][issue060201] or [edit on GitHub][edit060201].
 
 [control5]: https://top10proactive.owasp.org/the-top-10/c5-secure-by-default/
 [csproactive-c5]: https://cheatsheetseries.owasp.org/cheatsheets/Infrastructure_as_Code_Security_Cheat_Sheet.html
-[edit060204]: https://github.com/OWASP/DevGuide/blob/main/docs/en/04-design/02-web-app-checklist/01-secure-by-default.md
-[issue060204]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-design/02-web-app-checklist/01-secure-by-default
+[edit060201]: https://github.com/OWASP/DevGuide/blob/main/docs/en/04-design/02-web-app-checklist/01-secure-by-default.md
+[issue060201]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-design/02-web-app-checklist/01-secure-by-default
