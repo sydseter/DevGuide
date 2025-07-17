@@ -64,8 +64,9 @@ and use the list below as suggestions for a checklist that has been tailored for
 2. Ensure secure communication channels are properly configured
 3. Utilize TLS connections for all connectivity between a client and external-facing, HTTP-based services
 4. Ensure the TLS connections do not fall back to insecure or unencrypted communication
-5. Utilize a single standard TLS implementation with (preferably the latest) secure version of TLS
-6. Ensure the TLS connections are configured appropriately to validate certificates received before communicating and
+5. Turn off older protocols to avoid protocol downgrade attacks
+6. Utilize a single standard TLS implementation with (preferably the latest) secure version of TLS
+7. Ensure the TLS connections are configured appropriately to validate certificates received before communicating and
    checking revocation status
 
 #### References
