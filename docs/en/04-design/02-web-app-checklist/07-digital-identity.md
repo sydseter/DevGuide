@@ -26,15 +26,14 @@ and use the list below as suggestions for a checklist that has been tailored for
 14. Authentication credentials for accessing services external to the application should be stored in a secure store
 15. Use only HTTP POST requests to transmit authentication credentials
 16. Force all requests to go through access control checks unless public
-17. Do not hard code access controls that are role based
-18. Log all access control events
-19. Validate the authentication data only on completion of all data input
-20. Authentication failure responses should not indicate which part of the authentication data was incorrect.
+17. Log all access control events
+18. Validate the authentication data only on completion of all data input
+19. Authentication failure responses should not indicate which part of the authentication data was incorrect.
    E.g. Through giving different textual response or HTTP response codes
-21. Authentication failure responses should not give away the existent of user accounts by allowing the response time to
+20. Authentication failure responses should not give away the existent of user accounts by allowing the response time to
    differ, depending on whether a username exist or not. Use a DB transaction that looks for a fake user profile in case the
    username doesn't exist
-22. Add a random tunable delay for authentication failures to defer brute force attacks and protect against timing attacks
+21. Add a random tunable delay for authentication failures to defer brute force attacks and protect against timing attacks
 
 #### 2. Passwords
 
