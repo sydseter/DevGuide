@@ -21,7 +21,7 @@ and use the lists below as suggestions for a checklist that has been tailored fo
 11. Do not store passwords, secrets, connection strings, key material, secret management integrations or other sensitive information in clear text or in any non-cryptographically secure manner on the client, in source code, or build artifacts
 12. Remove or restrict access to internal application and system documentation (such as for internal APIs) as this can reveal backend system or other useful information to attackers
 
-2. File Management
+#### 2. File Management
 
 1. Turn off directory listings
 2. Do not save files in the same web context as the application
