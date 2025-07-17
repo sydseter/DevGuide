@@ -48,6 +48,8 @@ In addition consider the following extra checks for frameworks and libraries.
 11. Restrict users from generating new code or altering existing code
 12. Implement safe updates using encrypted channels
 14. Use cryptographic signatures when updating your code and ensure the package manager verify those signatures
+15. Use your SBOMs together with periodic or continuous monitoring tools such as OWASP dependency-track to automatically detect well-known publicly disclosed vulnerabilities.
+16. integrate SCA tools in early stages of software development
 
 #### References
 
