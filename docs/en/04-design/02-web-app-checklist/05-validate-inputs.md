@@ -28,6 +28,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 3. If the standard validation routine cannot address some inputs then use extra discrete checks
 4. If any potentially hazardous input _must_ be allowed then implement additional controls
 5. Validate for expected data types using an allow-list rather than a deny-list
+6. Do not allow the application to issue commands directly to the Operating System
 
 #### 3. Validate serialized data
 
