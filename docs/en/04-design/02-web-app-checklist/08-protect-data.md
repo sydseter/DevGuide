@@ -21,11 +21,11 @@ and use the list below as suggestions for a checklist that has been tailored for
 
 1. Classify data according to the level of sensitivity
 2. Implement appropriate access controls for sensitive data
-5. Avoid storing sensitive data when at all possible
-6. Implement least privilege, restricting access to functionality, data and system information
-7. Do not include sensitive information in the URL or query string, such as an API key or session token
-8. Disable client side caching on pages containing sensitive information (e.g. Cache-Control: no-store)
-9. Set a referrer policy to prevent leakage of sensitive data to third-party services via the 'Referer' HTTP request header
+3. Avoid storing sensitive data when at all possible
+4. Implement least privilege, restricting access to functionality, data and system information
+5. Do not include sensitive information in the URL or query string, such as an API key or session token
+6. Disable client side caching on pages containing sensitive information (e.g. Cache-Control: no-store)
+7. Set a referrer policy to prevent leakage of sensitive data to third-party services via the 'Referer' HTTP request header
     field. This can be done using the Referrer-Policy HTTP response header field or via HTML element attributes
 
 #### 3. Secret Management
@@ -36,8 +36,8 @@ and use the list below as suggestions for a checklist that has been tailored for
 4. Use independent keys when multiple keys are required
 5. Build application features to handle a secret key rotation
 6. Ensure that secrets are not stored in code, config files or environment variables
-8. Scan code repositories to detect accidentally added secrets and credentials
-9. Log all authorized access to a secret key for forensic purposes
+7. Scan code repositories to detect accidentally added secrets and credentials
+8. Log all authorized access to a secret key for forensic purposes
 
 #### 4. Memory management
 
