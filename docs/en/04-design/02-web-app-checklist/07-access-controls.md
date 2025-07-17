@@ -34,7 +34,8 @@ and use the list below as suggestions for a checklist that has been tailored for
 2. If long authenticated sessions are allowed, periodically re-validate a user's authorization
 3. Implement account auditing and enforce the disabling of unused accounts
 4. A new account should have minimal or no access by default
-5. For highly sensitive accounts implement Just in Time (JIT), Just Enough Access (JEA) management and avoid the use of admin accounts with global access
+5. For highly sensitive accounts implement Just in Time (JIT), Just Enough Access (JEA) management and avoid the use
+    of admin accounts with global access
 6. The application must support termination of sessions when authorization ceases
 7. Restrict function-level access to consumers with explicit permissions
 8. Restrict direct object references to only authorized users with explicit permissions to specific data items  
