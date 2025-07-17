@@ -10,7 +10,7 @@ and use the lists below as suggestions for a checklist that has been tailored fo
 
 1. Restrict applications, processes and service accounts to the least privileges possible
 2. Code which defines the infrastructure should follow the principle of least privilege.
-3. Remove all unnecessary functionality and files
+3. Remove all unnecessary functionality such as files, accounts, software, and demo capabilities
 4. Remove test code or any functionality not intended for production, prior to deployment
 5. The security configuration store for the application should be available in human readable form to support auditing
 6. Isolate development environments from production and provide access only to authorized development and test groups
