@@ -26,7 +26,8 @@ the
 11. Ensure the .git, .svn folders or any source control metadata aren't deployed together alongside the application in
     away that makes these directly accessible externally or indirectly through the application
 12. Do not store passwords, secrets, connection strings, key material, secret management integrations or other
-    sensitive information in clear text or in any non-cryptographically secure manner on the client, in source code, or build artifacts
+    sensitive information in clear text or in any non-cryptographically secure manner on the client, in source code, or build
+    artifacts
 13. Remove or restrict access to internal application and system documentation (such as for internal APIs) as this can
     reveal backend system or other useful information to attackers
 
