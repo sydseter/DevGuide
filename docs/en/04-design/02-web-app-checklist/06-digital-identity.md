@@ -87,7 +87,8 @@ and use the list below as suggestions for a checklist that has been tailored for
 2. Generate a new session during authentication and re-authentication
 3. All active sessions must be terminated when a user account is disabled or deleted
 4. After a successful change or removal of any authentication factor give the option to terminate all other active sessions
-5. Implement an idle timeout after a period of inactivity and an absolute maximum lifetime for each session, after which users must re-authenticate
+5. Implement an idle timeout after a period of inactivity and an absolute maximum lifetime for each session, after
+    which users must re-authenticate
 6. Supplement standard session management for sensitive server-side operations, like account management, by requiring and
    validating anti-forgery tokens (CSRF tokens) for each request that may change application state or execute an action
 
