@@ -26,6 +26,11 @@ and use the lists below as suggestions for a checklist that has been tailored fo
 16. Remove or restrict access to internal application and system documentation (such as for internal APIs) as this can reveal backend system or other useful information to attackers
 17. Restrict access to files or other resources, including those outside the application's direct control using an allow list or the equivalent thereof.
 
+----
+
+The OWASP Developer Guide is a community effort; if there is something that needs changing
+then [submit an issue][issue060202] or [edit on GitHub][edit060202].
+
 [control5]: https://top10proactive.owasp.org/the-top-10/c5-secure-by-default/
 [csproactive-c5]: https://cheatsheetseries.owasp.org/cheatsheets/Infrastructure_as_Code_Security_Cheat_Sheet.html
 [edit060204]: https://github.com/OWASP/DevGuide/blob/main/docs/en/04-design/02-web-app-checklist/01-secure-by-default.md
