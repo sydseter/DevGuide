@@ -14,17 +14,20 @@ and use the lists below as suggestions for a checklist that has been tailored fo
 4. The security configuration store for the application should be available in human readable form to support auditing
 5. Isolate development environments from production and provide access only to authorized development and test groups
 6. Implement a software change control system to manage and record changes to the code both in development and production
-7. Turn off directory listings
-8. Do not save files in the same web context as the application
-9. Turn off execution privileges on file upload directories
-10. Ensure application files and resources are read-only
-11. Prevent accidentally accessible and sensitive pages from appearing in search engines using a robots.txt file, the X-Robots-Tag response header or a robots html meta tag
-12. Disable unnecessary HTTP methods, such as WebDAV extensions. If an extended HTTP method that supports file handling is required, utilize a well-vetted authentication mechanism
-13. Remove unnecessary information from HTTP response headers related to the OS, web-server version and application frameworks unless implemented to confuse an attacker
-14. Ensure the .git, .svn folders or any source control metadata aren't deployed together alongside the application in away that makes these directly accessible externally or indirectly through the application
-15. Do not store passwords, secrets, connection strings, key material, secret management integrations or other sensitive information in clear text or in any non-cryptographically secure manner on the client, in source code, or build artifacts
-16. Remove or restrict access to internal application and system documentation (such as for internal APIs) as this can reveal backend system or other useful information to attackers
-17. Restrict access to files or other resources, including those outside the application's direct control using an allow list or the equivalent thereof.
+7. Prevent accidentally accessible and sensitive pages from appearing in search engines using a robots.txt file, the X-Robots-Tag response header or a robots html meta tag
+8. Disable unnecessary HTTP methods, such as WebDAV extensions. If an extended HTTP method that supports file handling is required, utilize a well-vetted authentication mechanism
+9. Remove unnecessary information from HTTP response headers related to the OS, web-server version and application frameworks unless implemented to confuse an attacker
+10. Ensure the .git, .svn folders or any source control metadata aren't deployed together alongside the application in away that makes these directly accessible externally or indirectly through the application
+11. Do not store passwords, secrets, connection strings, key material, secret management integrations or other sensitive information in clear text or in any non-cryptographically secure manner on the client, in source code, or build artifacts
+12. Remove or restrict access to internal application and system documentation (such as for internal APIs) as this can reveal backend system or other useful information to attackers
+
+2. File Management
+
+1. Turn off directory listings
+2. Do not save files in the same web context as the application
+3. Turn off execution privileges on file upload directories
+4. Ensure application files and resources are read-only
+5. Restrict access to files or other resources, including those outside the application's direct control using an allow list or the equivalent thereof.
 
 ----
 
