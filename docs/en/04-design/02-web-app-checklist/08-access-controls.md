@@ -44,6 +44,7 @@ and use the list below as suggestions for a checklist that has been tailored for
     that they allow for business functionality and rules to be compromised
 17. Enforce application logic flows to comply with business rules
 18. If the application must run with elevated privileges, raise privileges as late as possible, and drop as soon as possible
+19. Do not hard code access controls that are role based
 
 #### References
 
