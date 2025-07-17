@@ -69,6 +69,9 @@ and use the list below as suggestions for a checklist that has been tailored for
 7. Utilize a single standard TLS implementation with (preferably the latest) secure version of TLS
 8. Ensure the TLS connections are configured appropriately to validate certificates received before communicating and
    checking revocation status
+9. Use the Strict-Transport-Security Header
+10. Use Content-Security-Policy to enforce client-side upgrade from HTTP to HTTPS.
+11. Always utilize the “secure” flag for cookies to prevent transmission over HTTP.
 
 #### References
 
