@@ -16,13 +16,14 @@ and use the lists below as suggestions for a checklist that has been tailored fo
 6. Implement a software change control system to manage and record changes to the code both in development and production
 7. Turn off directory listings
 8. Do not save files in the same web context as the application
-9. Prevent accidentally accessible and sensitive pages from appearing in search engines using a robots.txt file, the X-Robots-Tag response header or a robots html meta tag
-10. Disable unnecessary HTTP methods, such as WebDAV extensions. If an extended HTTP method that supports file handling is required, utilize a well-vetted authentication mechanism
-11. Remove unnecessary information from HTTP response headers related to the OS, web-server version and application frameworks unless implemented to confuse an attacker
-12. Ensure the .git, .svn folders or any source control metadata aren't deployed together alongside the application in away that makes these directly accessible externally or indirectly through the application
-13. Do not store passwords, secrets, connection strings, key material, secret management integrations or other sensitive information in clear text or in any non-cryptographically secure manner on the client, in source code, or build artifacts
-14. Remove or restrict access to internal application and system documentation (such as for internal APIs) as this can reveal backend system or other useful information to attackers
-15. Restrict access to files or other resources, including those outside the application's direct control using an allow list or the equivalent thereof.
+9. Turn off execution privileges on file upload directories
+10. Prevent accidentally accessible and sensitive pages from appearing in search engines using a robots.txt file, the X-Robots-Tag response header or a robots html meta tag
+11. Disable unnecessary HTTP methods, such as WebDAV extensions. If an extended HTTP method that supports file handling is required, utilize a well-vetted authentication mechanism
+12. Remove unnecessary information from HTTP response headers related to the OS, web-server version and application frameworks unless implemented to confuse an attacker
+13. Ensure the .git, .svn folders or any source control metadata aren't deployed together alongside the application in away that makes these directly accessible externally or indirectly through the application
+14. Do not store passwords, secrets, connection strings, key material, secret management integrations or other sensitive information in clear text or in any non-cryptographically secure manner on the client, in source code, or build artifacts
+15. Remove or restrict access to internal application and system documentation (such as for internal APIs) as this can reveal backend system or other useful information to attackers
+16. Restrict access to files or other resources, including those outside the application's direct control using an allow list or the equivalent thereof.
 
 [control5]: https://top10proactive.owasp.org/the-top-10/c5-secure-by-default/
 [csproactive-c5]: https://cheatsheetseries.owasp.org/cheatsheets/Infrastructure_as_Code_Security_Cheat_Sheet.html
