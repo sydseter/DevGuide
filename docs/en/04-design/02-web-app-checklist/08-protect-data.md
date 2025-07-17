@@ -51,14 +51,14 @@ and use the list below as suggestions for a checklist that has been tailored for
 8. Protect shared variables and resources from inappropriate concurrent access
 9. Avoid the use of known vulnerable functions (e.g., printf, strcat, strcpy etc.)
 
-#### 5. Protct Data at Rest
+#### 5. Protect Data at Rest
 
 1. Ensure sensitive data at rest is cryptographically protected to avoid unauthorized disclosure and modification
 2. Purge sensitive data when that data is no longer required
 3. Protect all cached or temporary copies of sensitive data from unauthorized access
 4. Purge those temporary copies of sensitive data as soon as they are no longer required
 
-#### 5. Protct Data in Transit
+#### 5. Protect Data in Transit
 
 1. Encrypt data in transit
 2. Ensure secure communication channels are properly configured
