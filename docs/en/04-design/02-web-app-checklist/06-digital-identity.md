@@ -2,14 +2,14 @@
 Session management is a process by which a server maintains the state of the users authentication
 so that the user may continue to use the system without re-authenticating.
 
-Refer to proactive control [C7: Implement Digital Identity][control7] and its [cheatsheets][csproactive-c6]
+Refer to proactive control [C7: Secure Digital Identities][control7] and its [cheatsheets][csproactive-c6]
 for more context from the OWASP Top 10 Proactive Controls project,
 and use the list below as suggestions for a checklist that has been tailored for the individual project.
 
 #### 1. Authentication
 
-1. Design access control authentication thoroughly up-front
-2. Require authentication for all pages and resources, except those specifically intended to be public
+1. Require authentication for all pages and resources, except those specifically intended to be public
+2. Require authentication before allowing a file to be uploaded
 3. All authentication controls must be enforced on a trusted system
 4. All authentication controls should fail securely
 5. Establish and utilize standard, tested, authentication services whenever possible
@@ -26,15 +26,14 @@ and use the list below as suggestions for a checklist that has been tailored for
 14. Authentication credentials for accessing services external to the application should be stored in a secure store
 15. Use only HTTP POST requests to transmit authentication credentials
 16. Force all requests to go through access control checks unless public
-17. Do not hard code access controls that are role based
-18. Log all access control events
-19. Validate the authentication data only on completion of all data input
-20. Authentication failure responses should not indicate which part of the authentication data was incorrect.
+17. Log all access control events
+18. Validate the authentication data only on completion of all data input
+19. Authentication failure responses should not indicate which part of the authentication data was incorrect.
    E.g. Through giving different textual response or HTTP response codes
-21. Authentication failure responses should not give away the existent of user accounts by allowing the response time to
+20. Authentication failure responses should not give away the existent of user accounts by allowing the response time to
    differ, depending on whether a username exist or not. Use a DB transaction that looks for a fake user profile in case the
    username doesn't exist
-22. Add a random tunable delay for authentication failures to defer brute force attacks and protect against timing attacks
+21. Add a random tunable delay for authentication failures to defer brute force attacks and protect against timing attacks
 
 #### 2. Passwords
 
@@ -82,11 +81,15 @@ and use the list below as suggestions for a checklist that has been tailored for
 17. Set cookies with the `HttpOnly` attribute,
     unless you specifically require client-side scripts within your application to read or set a cookie value
 
-#### 4. Session Management
+#### 4. Session Generation and Expiration
 
-1. All active sessions must be terminated when a user account is disabled or deleted
-2. After a successful change or removal of any authentication factor give the option to terminate all other active sessions
-3. Supplement standard session management for sensitive server-side operations, like account management, by requiring and
+1. Ensure that the session id is long, unique and random, i.e., is of high entropy
+2. Generate a new session during authentication and re-authentication
+3. All active sessions must be terminated when a user account is disabled or deleted
+4. After a successful change or removal of any authentication factor give the option to terminate all other active sessions
+5. Implement an idle timeout after a period of inactivity and an absolute maximum lifetime for each session, after
+    which users must re-authenticate
+6. Supplement standard session management for sensitive server-side operations, like account management, by requiring and
    validating anti-forgery tokens (CSRF tokens) for each request that may change application state or execute an action
 
 #### References

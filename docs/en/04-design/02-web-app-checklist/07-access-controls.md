@@ -5,7 +5,7 @@ Refer to proactive control [C1: Implement Access Controls][control1] and its [ch
 for more context from the OWASP Top 10 Proactive Controls project,
 and use the list below as suggestions for a checklist that has been tailored for the individual project.
 
-#### 1. Authorization
+#### 1. Implement Access Control
 
 1. Design access control / authorization thoroughly up-front
 2. Force all requests to go through access control checks unless public
@@ -17,31 +17,35 @@ and use the list below as suggestions for a checklist that has been tailored for
    function-level, data-specific, and field-level access based on consumer permissions and resource attributes
 7. Access Control criteria and/or processes not testable through automated tests should be documented so that they
    can be manually tested
-
-#### 2. Access control
-
-1. Enforce authorization controls on every request
-2. Use only trusted system objects for making access authorization decisions
-3. Use a single site-wide component to check access authorization
-4. Access controls should fail securely
-5. Deny all access if the application cannot access its security configuration information
-6. Segregate privileged logic from other application code
-7. Limit the number of transactions a single user or device can perform in a given period of time,
-    low enough to deter automated attacks but above the actual business requirement
-8. If long authenticated sessions are allowed, periodically re-validate a user's authorization
-9. Implement account auditing and enforce the disabling of unused accounts
-10. The application must support termination of sessions when authorization ceases
-11. Restrict function-level access to consumers with explicit permissions
-12. Restrict direct object references to only authorized users with explicit permissions to specific data items  
-    to mitigate insecure direct object reference (IDOR) and broken object level authorization (BOLA)
-13. Restrict access to user and data attributes to consumers with explicit permissions to specific fields to mitigate broken
-    object property level authorization (BOPLA)
-14. Restrict access security-relevant configuration information to only authorized users who have been allowed access through
-    multiple layers of security, including continuous consumer identity verification, device security posture assessment, and
-    contextual risk analysis
+8. Use only trusted system objects for making access authorization decisions
+9. Use a single site-wide component to check authorization
+10. Access control should fail securely
+11. Deny all access if the application cannot access its security configuration information
+12. Segregate privileged logic from other application code
+13. Do not hard code access controls that are role based
+14. Enforce application logic flows to comply with business rules
 15. Server side implementation and presentation layer representations of access control rules should not differ in such a way
     that they allow for business functionality and rules to be compromised
-16. Enforce application logic flows to comply with business rules
+
+#### 2. Access control Management
+
+1. Limit the number of transactions a single user or device can perform in a given period of time,
+    low enough to deter automated attacks but above the actual business requirement
+2. If long authenticated sessions are allowed, periodically re-validate a user's authorization
+3. Implement account auditing and enforce the disabling of unused accounts
+4. A new account should have minimal or no access by default
+5. For highly sensitive accounts implement Just in Time (JIT), Just Enough Access (JEA) management and avoid the use
+    of admin accounts with global access
+6. The application must support termination of sessions when authorization ceases
+7. Restrict function-level access to consumers with explicit permissions
+8. Restrict direct object references to only authorized users with explicit permissions to specific data items  
+    to mitigate insecure direct object reference (IDOR) and broken object level authorization (BOLA)
+9. Restrict access to user and data attributes to consumers with explicit permissions to specific fields to mitigate broken
+    object property level authorization (BOPLA)
+10. Restrict access security-relevant configuration information to only authorized users who have been allowed access through
+    multiple layers of security, including continuous consumer identity verification, device security posture assessment, and
+    contextual risk analysis
+11. If the application must run with elevated privileges, raise privileges as late as possible, and drop as soon as possible
 
 #### References
 

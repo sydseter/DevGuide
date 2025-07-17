@@ -1,7 +1,7 @@
 Secure coding libraries and software frameworks with embedded security help software developers guard against
 security-related design and implementation flaws.
 
-Refer to proactive control [C4: Address Security from the Start][control4]
+Refer to proactive control [C6: Keep your Components Secure][control6]
 and its [cheatsheets][csproactive-c2] for more context from the OWASP Top 10 Proactive Controls project.
 
 For technology specific checklists refer to the appropriate OWASP Cheat Sheets:
@@ -39,16 +39,18 @@ In addition consider the following extra checks for frameworks and libraries.
 2. Use libraries and frameworks from trusted sources that are actively maintained and widely used
 3. Review all secondary applications and third party libraries to determine business necessity
 4. Validate safe functionality for all secondary applications and third party libraries
-5. Create and maintain an inventory catalog of all third party libraries using Software Composition Analysis (SCA)
+5. Create and maintain an inventory catalog of all third party libraries. It is recommended to automatically create
+    SBOMs (Software-Bill-Of-Materials) from within the build pipeline.
 6. Proactively keep all third party libraries and components up to date
 7. Reduce the attack surface by encapsulating the library and expose only the required behavior into your software
 8. Use tested and approved managed code rather than creating new unmanaged code for common tasks
 9. Utilize task specific built-in APIs to conduct operating system tasks
-10. Do not allow the application to issue commands directly to the Operating System
-11. Use checksums or hashes to verify the integrity of interpreted code, libraries, executables, and configuration files
-12. Restrict users from generating new code or altering existing code
-13. Implement safe updates using encrypted channels
-14. Use cryptographic signatures when updating your code and ensure the package manager verify those signatures
+10. Use checksums or hashes to verify the integrity of interpreted code, libraries, executables, and configuration files
+11. Restrict users from generating new code or altering existing code
+12. Implement safe updates using encrypted channels
+13. Use cryptographic signatures when updating your code and ensure the package manager verify those signatures
+14. Use your SBOMs together with periodic or SCA tools to automatically detect well-known publicly disclosed vulnerabilities.
+15. integrate SCA tools in early stages of software development
 
 #### References
 
@@ -84,7 +86,7 @@ then [submit an issue][issue060202] or [edit on GitHub][edit060202].
 [cswebservice]: https://cheatsheetseries.owasp.org/cheatsheets/Web_Service_Security_Cheat_Sheet
 [csxml]: https://cheatsheetseries.owasp.org/cheatsheets/XML_Security_Cheat_Sheet
 [csproactive-c2]: https://cheatsheetseries.owasp.org/IndexProactiveControls.html#c2-leverage-security-frameworks-and-libraries
-[control4]: https://top10proactive.owasp.org/the-top-10/c4-secure-architecture/
+[control6]: https://top10proactive.owasp.org/the-top-10/c6-use-secure-dependencies/
 [dependency]: https://owasp.org/www-project-dependency-check/
 [edit060202]: https://github.com/OWASP/DevGuide/blob/main/docs/en/04-design/02-web-app-checklist/02-frameworks-libraries.md
 [issue060202]: https://github.com/OWASP/DevGuide/issues/new?labels=enhancement&template=request.md&title=Update:%2004-design/02-web-app-checklist/02-frameworks-libraries

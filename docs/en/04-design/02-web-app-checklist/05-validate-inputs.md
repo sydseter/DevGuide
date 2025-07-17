@@ -18,9 +18,8 @@ and use the list below as suggestions for a checklist that has been tailored for
 6. Verify that protocol header values in both requests and responses contain only ASCII characters
 7. Validate data from redirects
 8. Validate data range and also data length
-9. Utilize canonicalization to address obfuscation attacks
-10. All validation failures should result in input rejection
-11. Validate all input against an allowlist of characters, whenever possible
+9. All validation failures should result in input rejection
+10. Validate all input against an allowlist of characters, whenever possible
 
 #### 2. Libraries and frameworks
 
@@ -29,6 +28,7 @@ and use the list below as suggestions for a checklist that has been tailored for
 3. If the standard validation routine cannot address some inputs then use extra discrete checks
 4. If any potentially hazardous input _must_ be allowed then implement additional controls
 5. Validate for expected data types using an allow-list rather than a deny-list
+6. Do not allow the application to issue commands directly to the Operating System
 
 #### 3. Validate serialized data
 
@@ -40,6 +40,18 @@ and use the list below as suggestions for a checklist that has been tailored for
 4. Log security deserialization exceptions and failures
 5. Restrict or monitor incoming and outgoing network connectivity from containers or servers that deserialize
 6. Monitor deserialization, for example alerting if a user agent constantly deserializes
+
+#### 4. File validation
+
+1. Do not pass user supplied data directly to any dynamic include function
+2. Limit the type of files that can be uploaded to only those types that are needed for business purposes
+3. Validate uploaded files are the expected type by checking file headers rather than by file extension
+4. Prevent or restrict the uploading of any file that may be interpreted by the web server.
+5. When referencing existing files, use an allow-list of allowed file names and types
+6. Do not pass user supplied data into a dynamic redirect
+7. Do not pass directory or file paths, use index values mapped to pre-defined list of paths
+8. Never send the absolute file path to the client
+9. Scan user uploaded files for viruses and malware
 
 #### References
 
